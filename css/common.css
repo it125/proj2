@@ -99,9 +99,28 @@ table {
 }
 
 /* header */
-
+#header {
+    background: burlywood;
+}
 
 /* footer */
+#footer {
+    background: burlywood;
+}
 
+/* 미디어쿼리 */
+@media all and (min-width:1024px) {
+	
+}
 
-/* @media */
+@media all and (min-width:768px) and (max-width: 1023px) {
+	
+}
+
+@media all and (min-width:480px) and (max-width:767px) { 
+	
+}
+
+@media all and (max-width:479px) {
+    
+}
