@@ -98,14 +98,36 @@
 }
 
 #news .news-contents {
-    width: 100%;
+    width: 1024px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
 }
 
 #news .news-content {
     flex: 3;
 }
 
+#sns {
+    width: 100%;
+    background: cadetblue;
+}
+
+#sns .sns-title {
+    
+}
+
+#sns .sns-contents {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+}
+
+#sns .sns-content {
+    /* align-items: flex-start; */
+}
 
 /* 미디어쿼리 */
 @media all and (min-width:1024px) {
