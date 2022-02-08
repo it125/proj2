@@ -19,7 +19,7 @@
 }
 
 #program .program-content {
-    background: greenyellow;
+    background: yellowgreen;
     flex: 1 1 40%;
 }
 
@@ -70,9 +70,42 @@
 
 }
 
-#daily .daily-title {
+#daily .daily-contents {
+    width: 100%;
+    background: orangered;
+    display: flex;
+    flex-direction: row;
 
 }
+
+#daily .daily-content {
+    width: 100%;
+    height: 200px;
+    background: orange;
+}
+
+#daily .daily-content-cover {
+    
+}
+
+#news {
+    width: 100%;
+    background: yellowgreen;
+}
+
+#news .news-title {
+    
+}
+
+#news .news-contents {
+    width: 100%;
+    display: flex;
+}
+
+#news .news-content {
+    flex: 3;
+}
+
 
 /* 미디어쿼리 */
 @media all and (min-width:1024px) {
