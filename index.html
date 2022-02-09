@@ -718,8 +718,14 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/owl.carousel.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel();
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 50,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
         });
     </script>
 </body>
