@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* main */
 #main {
+    width: 100%;
     background: cadetblue;
     height: 100px;
 }
@@ -11,7 +12,7 @@
 }
 
 #program .program-contents {
-    width: 1024px;
+    width: 80%;
     margin: 0 auto;
     background: gold;
     display: flex;
@@ -105,6 +106,7 @@
 }
 
 #news .news-content {
+    width: 100%;
     flex: 3;
 }
 
@@ -150,18 +152,443 @@
 }
 
 /* 미디어쿼리 */
-@media all and (min-width:1024px) {
-	
+@media all and (min-width: 768px) and (max-width: 1023px){
+	#program {
+        background: sandybrown;
+        width: 100%;
+    }
+    
+    #program .program-contents {
+        width: 80%;
+        background: gold;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #program .program-content {
+        background: yellowgreen;
+        flex: 1 1 40%;
+    }
+    
+    #program .program-content:nth-child(1) {
+        margin: 0 30px 30px 0;
+    }
+    
+    #program .program-content:nth-child(2) {
+        margin: 0 0 30px 0;
+    }
+    
+    #program .program-content:nth-child(3) {
+        margin: 0 30px 0 0;
+    }
+    
+    #program .program-content:nth-child(4) {
+        margin: 0 0 0 0;
+    }
+    
+    #program .program-content:nth-child(5) {
+        display: none;
+    }
+
+    #program .program-content:nth-child(6) {
+        display: none;
+    }
+
+    #pitch {
+        background: cadetblue;
+        width: 100%;
+    }
+    
+    #pitch .pitch-title {
+    
+    }
+    
+    #pitch .pitch-contents {
+    
+    }
+    
+    #academy {
+        width: 100%;
+        background: orange;
+    }
+    
+    #daily {
+        background: gold;
+        width: 100%;
+    }
+    
+    #daily .daily-title {
+    
+    }
+    
+    #daily .daily-contents {
+        width: 100%;
+        background: orangered;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #daily .daily-content {
+        width: 100%;
+        height: 200px;
+        background: orange;
+        flex: 1 1 40%;
+    }
+    
+    #daily .daily-content-cover {
+        
+    }
+
+    #news {
+        width: 100%;
+        background: yellowgreen;
+    }
+    
+    #news .news-title {
+        
+    }
+    
+    #news .news-contents {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #news .news-content {
+        width: 100%;
+    }
+    
+    #sns {
+        width: 100%;
+        background: cadetblue;
+    }
+    
+    #sns .sns-title {
+        
+    }
+    
+    #sns .sns-contents {
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+    }
+    
+    #sns .sns-content {
+        /* align-items: flex-start; */
+    }
+    
+    #newsletter {
+        width: 100%;
+        height: 300px;
+        background: burlywood;
+    }
+    
+    #newsletter .newsletter-contents { 
+    
+    }
+    
+    #newsletter {
+    
+    }
+    
+    #market {
+        width: 100%;
+        height: 200px;
+        background: yellowgreen;
+    }
+    
 }
 
-@media all and (min-width:768px) and (max-width: 1023px) {
-	
+@media all and (min-width: 480px) and (max-width: 767px) {
+	#program {
+        background: sandybrown;
+        width: 100%;
+    }
+    
+    #program .program-contents {
+        width: 80%;
+        background: gold;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #program .program-content {
+        background: yellowgreen;
+        flex: 1 1 40%;
+    }
+    
+    #program .program-content:nth-child(1) {
+        margin: 0 30px 30px 0;
+    }
+    
+    #program .program-content:nth-child(2) {
+        margin: 0 0 30px 0;
+    }
+    
+    #program .program-content:nth-child(3) {
+        margin: 0 30px 0 0;
+    }
+    
+    #program .program-content:nth-child(4) {
+        margin: 0 0 0 0;
+    }
+    
+    #program .program-content:nth-child(5) {
+        display: none;
+    }
+
+    #program .program-content:nth-child(6) {
+        display: none;
+    }
+
+    #pitch {
+        background: cadetblue;
+        width: 100%;
+    }
+    
+    #pitch .pitch-title {
+    
+    }
+    
+    #pitch .pitch-contents {
+        /* width: 100%; */
+    }
+    
+    #academy {
+        width: 100%;
+        background: orange;
+    }
+    
+    #daily {
+        background: gold;
+        width: 100%;
+    }
+    
+    #daily .daily-title {
+    
+    }
+    
+    #daily .daily-contents {
+        width: 100%;
+        background: orangered;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #daily .daily-content {
+        width: 100%;
+        height: 200px;
+        background: orange;
+        flex: 1 1 40%;
+    }
+    
+    #daily .daily-content-cover {
+        
+    }
+    
+    #news {
+        width: 100%;
+        background: yellowgreen;
+    }
+    
+    #news .news-title {
+        
+    }
+    
+    #news .news-contents {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #news .news-content {
+        flex: 3;
+    }
+    
+    #sns {
+        width: 100%;
+        background: cadetblue;
+    }
+    
+    #sns .sns-title {
+        
+    }
+    
+    #sns .sns-contents {
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+    }
+    
+    #sns .sns-content {
+        /* align-items: flex-start; */
+    }
+    
+    #newsletter {
+        width: 100%;
+        height: 300px;
+        background: burlywood;
+    }
+    
+    #newsletter .newsletter-contents { 
+    
+    }
+    
+    #newsletter {
+    
+    }
+    
+    #market {
+        width: 100%;
+        height: 200px;
+        background: yellowgreen;
+    }
 }
 
-@media all and (min-width:480px) and (max-width:767px) { 
-	
-}
+@media all and (max-width: 479px)  { 
+	#program {
+        background: sandybrown;
+        width: 100%;
+    }
+    
+    #program .program-contents {
+        width: 80%;
+        background: gold;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #program .program-content {
+        background: yellowgreen;
+    }
+    
+    #program .program-content:nth-child(1) {
+        margin: 0;
+    }
+    
+    #program .program-content:nth-child(2) {
+        margin: 0;
+    }
+    
+    #program .program-content:nth-child(3) {
+        margin: 0;
+    }
+    
+    #program .program-content:nth-child(4) {
+        margin: 0;
+    }
+    
+    #program .program-content:nth-child(5) {
+        display: none;
+    }
 
-@media all and (max-width:479px) {
+    #program .program-content:nth-child(6) {
+        display: none;
+    }
 
+    #pitch {
+        background: cadetblue;
+        width: 100%;
+    }
+    
+    #pitch .pitch-title {
+    
+    }
+    
+    #pitch .pitch-contents {
+        /* width: 100%; */
+    }
+    
+    #academy {
+        width: 100%;
+        background: orange;
+    }
+    
+    #daily {
+        background: gold;
+        width: 100%;
+    }
+    
+    #daily .daily-title {
+    
+    }
+    
+    #daily .daily-contents {
+        width: 100%;
+        background: orangered;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #daily .daily-content {
+        width: 100%;
+        height: 200px;
+        background: orange;
+        flex: 1 1 40%;
+    }
+    
+    #daily .daily-content-cover {
+        
+    }
+    
+    #news {
+        width: 100%;
+        background: yellowgreen;
+    }
+    
+    #news .news-title {
+        
+    }
+    
+    #news .news-contents {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #news .news-content {
+        flex: 3;
+    }
+    
+    #sns {
+        width: 100%;
+        background: cadetblue;
+    }
+    
+    #sns .sns-title {
+        
+    }
+    
+    #sns .sns-contents {
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+    }
+    
+    #sns .sns-content {
+        /* align-items: flex-start; */
+    }
+    
+    #newsletter {
+        width: 100%;
+        height: 300px;
+        background: burlywood;
+    }
+    
+    #newsletter .newsletter-contents { 
+    
+    }
+    
+    #newsletter {
+    
+    }
+    
+    #market {
+        width: 100%;
+        height: 200px;
+        background: yellowgreen;
+    }
 }

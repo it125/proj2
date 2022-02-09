@@ -100,19 +100,88 @@ table {
 
 /* header */
 #header {
-    background: burlywood;
+    width: 100%;
 }
+
+#header .h-wrap {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 8px;
+}
+
+#header .h-wrap .archive a {
+    font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+}
+
+#header .h-wrap .login {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .h-wrap .login li {
+    display: inline-block;
+}
+
+#header .h-wrap .login li a {
+    font-family: '';
+}
+
+#header .h-wrap .logo {
+    text-align: center;
+}
+
+#header .h-wrap .logo img {
+    width: 200px;
+}
+
+#header .h-wrap nav {
+    position: relative;
+    text-align: center;
+}
+
+#header .h-wrap nav .gnb{
+    overflow: hidden;
+}
+
+#header .h-wrap nav .gnb li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header .h-wrap nav .lnb {
+    width: 100%;
+}
+
+#header .h-wrap nav .lnb li {
+    display: block;
+}
+
+#header .h-wrap nav .lnb li a {
+
+}
+
+#header .h-wrap .search img {
+    width: 40px;
+}
+
+#header .h-wrap .time-table img {
+    width: 40px;
+}
+
 
 /* footer */
 #footer {
-    background: burlywood;
+    width: 100%;
+}
+
+#footer .f-wrap {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* 미디어쿼리 */
-@media all and (min-width:1024px) {
-	
-}
-
 @media all and (min-width:768px) and (max-width: 1023px) {
 	
 }
