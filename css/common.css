@@ -61,39 +61,40 @@ table {
 
 /* font */
 @import url('http://fonts.cdnfonts.com/css/gloss-and-bloom');
+/* font-family: 'Gloss And Bloom', sans-serif; */
 
 @font-face {
     font-family: 'SpoqaHanSansNeo-Regular';
-    src: url('../font/SpoqaHanSansNeo-Regular.eot') format('eot');
-    src: url('../font/SpoqaHanSansNeo-Regular.woff') format('woff');
-    src: url('../font/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSansNeo-Regular.eot') format('eot');
+    src: url('../fonts/SpoqaHanSansNeo-Regular.woff') format('woff');
+    src: url('../fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SpoqaHanSansNeo-Medium';
-    src: url('../font/SpoqaHanSansNeo-Medium.eot') format('eot');
-    src: url('../font/SpoqaHanSansNeo-Medium.woff') format('woff');
-    src: url('../font/SpoqaHanSansNeo-Medium.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSansNeo-Medium.eot') format('eot');
+    src: url('../fonts/SpoqaHanSansNeo-Medium.woff') format('woff');
+    src: url('../fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SpoqaHanSansNeo-Bold';
-    src: url('../font/SpoqaHanSansNeo-Bold.eot') format('eot');
-    src: url('../font/SpoqaHanSansNeo-Bold.woff') format('woff');
-    src: url('../font/SpoqaHanSansNeo-Bold.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSansNeo-Bold.eot') format('eot');
+    src: url('../fonts/SpoqaHanSansNeo-Bold.woff') format('woff');
+    src: url('../fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SpoqaHanSansNeo-Thin';
-    src: url('../font/SpoqaHanSansNeo-Thin.eot') format('eot');
-    src: url('../font/SpoqaHanSansNeo-Thin.woff') format('woff');
-    src: url('../font/SpoqaHanSansNeo-Thin.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSansNeo-Thin.eot') format('eot');
+    src: url('../fonts/SpoqaHanSansNeo-Thin.woff') format('woff');
+    src: url('../fonts/SpoqaHanSansNeo-Thin.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -112,6 +113,7 @@ table {
 
 #header .h-wrap .archive a {
     font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    font-size: 0.9em;
 }
 
 #header .h-wrap .login {
@@ -122,14 +124,21 @@ table {
 
 #header .h-wrap .login li {
     display: inline-block;
+    padding-right: 10px;
+}
+
+#header .h-wrap .login li:last-child {
+    padding-right: 0;
 }
 
 #header .h-wrap .login li a {
-    font-family: '';
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 0.9em;
 }
 
 #header .h-wrap .logo {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #header .h-wrap .logo img {
@@ -137,39 +146,67 @@ table {
 }
 
 #header .h-wrap nav {
-    position: relative;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-#header .h-wrap nav .gnb{
-    overflow: hidden;
+#header .h-wrap nav .gnb {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#header .h-wrap nav .gnb li {
-    display: inline-block;
+#header .h-wrap nav .gnb > li {
     vertical-align: top;
+    display: inline-block;
+}
+
+#header .h-wrap nav .gnb > li > a {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 1.1em;
+}
+
+#header .h-wrap nav .gnb:hover .lnb {
+    /* display: block; */
 }
 
 #header .h-wrap nav .lnb {
     width: 100%;
+    position: relative;
+    margin-top: 30px;
+    /* display: none; */
 }
 
-#header .h-wrap nav .lnb li {
-    display: block;
+#header .h-wrap nav .lnb > li {
+    margin-bottom: 15px;
 }
 
-#header .h-wrap nav .lnb li a {
+#header .h-wrap nav .lnb > li > a {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+}
 
+#header .h-wrap .search {
+    position: absolute;
+    top: 118px;
+    left: -60px;
 }
 
 #header .h-wrap .search img {
-    width: 40px;
+    width: 25px;
+}
+
+#header .h-wrap .time-table {
+    position: absolute;
+    top: 118px;
+    right: -60px;
 }
 
 #header .h-wrap .time-table img {
-    width: 40px;
+    width: 25px;
 }
-
 
 /* footer */
 #footer {
