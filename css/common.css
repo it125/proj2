@@ -99,6 +99,16 @@ table {
     font-style: normal;
 }
 
+/* animation */
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 /* header */
 #header {
     width: 100%;
@@ -146,12 +156,12 @@ table {
 }
 
 #header .h-wrap nav {
+    position: relative;
     text-align: center;
     margin-bottom: 30px;
 }
 
 #header .h-wrap nav .gnb {
-    position: relative;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -160,8 +170,9 @@ table {
 }
 
 #header .h-wrap nav .gnb > li {
+    position: relative;
+    width: 100%;
     vertical-align: top;
-    display: inline-block;
 }
 
 #header .h-wrap nav .gnb > li > a {
@@ -170,12 +181,16 @@ table {
 }
 
 #header .h-wrap nav .gnb:hover .lnb {
-    /* display: block; */
+    display: block;
+    animation: fade 0.3s ease-in;
+}
+
+#header .h-wrap nav .gnb > li:hover > a {
+    font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
 }
 
 #header .h-wrap nav .lnb {
     width: 100%;
-    position: relative;
     margin-top: 30px;
     display: none;
 }
@@ -208,6 +223,10 @@ table {
     width: 25px;
 }
 
+#header .h-wrap nav .lnb li:hover a {
+    font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+}
+
 /* footer */
 #footer {
     width: 100%;
@@ -221,7 +240,6 @@ table {
 #footer .f-wrap .partners {
     width: 100%;
 }
-
 
 /* 미디어쿼리 */
 @media all and (min-width:768px) and (max-width: 1023px) {
