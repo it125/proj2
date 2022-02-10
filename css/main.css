@@ -73,6 +73,33 @@
 
 #program {
     width: 100%;
+    margin: 100px 0;
+}
+
+#program .title {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#program .title h2 {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 2.3em;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#program .programs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#program label select {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    background: #e3e3e3;
 }
 
 #program .program-contents {
@@ -104,6 +131,10 @@
 
 #program .program-content:nth-child(5) {
     margin: 0 30px 0 0;
+}
+
+#program .program-content img {
+    width: 80%;
 }
 
 #pitch {
