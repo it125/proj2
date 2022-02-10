@@ -100,6 +100,17 @@
     padding: 10px;
     border: none;
     background: #e3e3e3;
+    /*
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none;
+    */
+}
+
+#program .plus {
+    position: absolute;
+    top: 40%;
+    left: 37%;
 }
 
 #program .program-contents {
@@ -110,6 +121,7 @@
 }
 
 #program .program-content {
+    position: relative;
     flex: 1 1 40%;
 }
 
@@ -135,6 +147,16 @@
 
 #program .program-content img {
     width: 80%;
+}
+
+#program .plus img {
+    width: 50px;
+}
+
+#program .content-detail {
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 #pitch {
