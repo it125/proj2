@@ -4,6 +4,73 @@
     width: 100%;
 }
 
+#main .main-img {
+    text-align: center;
+    position: relative;
+}
+
+#main .main-img img {
+    width: 100%;
+}
+
+#main .main-contents {
+    padding: 150px 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+#main .main-contents p {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: -4px;
+}
+
+#main .main-contents p:nth-child(1) {
+    font-family: 'SpoqaHanSansNeo-Medium', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    padding: 3px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+#main .main-contents p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+#main .main-contents p:nth-child(3) {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#main .main-contents p:nth-child(9) {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-size: 1.5em;
+    line-height: 35px;
+    letter-spacing: -1.5px;
+}
+
+#main .main-contents span {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#main .main-contents span::after {
+    content: '|';
+    margin-left: 4px;
+}
+
+#main .main-contents span:nth-child(8)::after {
+    content: '';
+}
+
 #program {
     width: 100%;
 }
