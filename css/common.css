@@ -59,6 +59,10 @@ table {
 	border-spacing: 0;
 }
 
+::selection {
+    background: #79839b;
+}
+
 /* font */
 @import url('http://fonts.cdnfonts.com/css/gloss-and-bloom');
 /* font-family: 'Gloss And Bloom', sans-serif; */
@@ -187,11 +191,12 @@ table {
 
 #header nav .gnb:hover .lnb {
     display: block;
-    animation: fade 0.3s ease-in;
+    animation: fade 0.5s ease-in;
 }
 
 #header nav .gnb > li:hover > a {
-    font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    font-weight: 800;
+    animation: fade 1s ease-in-out;
 }
 
 #header nav .lnb {
@@ -209,7 +214,7 @@ table {
 }
 
 #header nav .lnb li:hover a {
-    font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    font-weight: 800;
 }
 
 #header .search {
