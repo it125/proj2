@@ -83,9 +83,10 @@
 }
 
 #program .title h2 {
-    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-    font-size: 2.3em;
-    letter-spacing: 5px;
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
     text-align: center;
 }
 
@@ -265,23 +266,109 @@
     animation: fade 0.5s ease-in;
 }
 
-#program .plus
+#program .more {
+    position: relative;
+    border: 1px solid #000;
+    width: 200px;
+    padding: 20px;
+    margin: 80px auto;
+}
+
+#program .more span {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+}
+
+#program .more figure {
+    position: absolute;
+    top: 33%;
+    right: 10%;
+}
 
 #pitch {
+    cursor: pointer;
     width: 100%;
+    height: 700px;
+    margin-bottom: 100px;
+    background: url('../images/pitch_bg_dark.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #pitch .pitch-title {
-
+    padding: 250px 0 50px;
 }
 
-#pitch .pitch-contents {
+#pitch .pitch-title h2 {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 10px;
+    text-align: center;
+}
 
+#pitch .pitch-contents p {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 40px;
 }
 
 #academy {
     width: 100%;
 }
+
+#academy .academy-title {
+    margin-bottom: 50px;
+}
+
+#academy .academy-title h2 {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#academy .academy-menu {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#academy .academy-menu select {
+    width: 300px;
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    background: #e3e3e3;
+}
+
+#academy .academy-contents {
+    cursor: pointer;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 700px;
+    margin-bottom: 100px;
+    background: url('../images/academy1_bg_dark.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#academy .academy-contents {
+    width: 100%;
+
+}
+
+#academy .academy-contents
 
 #daily {
     width: 100%;
