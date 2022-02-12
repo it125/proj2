@@ -134,6 +134,51 @@
     flex-wrap: wrap;
 }
 
+#program .program-contents::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 10%;
+    top: 10%;
+    width: 0%;
+    height: 2px; 
+}
+
+#program .program-contents::after {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.7);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 10%;
+  top: 90%;
+  width: 0%;
+  height: 2px; }
+
+  #program .program-content::before {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.7);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 10%;
+  top: 10%;
+  width: 2px;
+  height: 0%; }
+  
+  #program .program-content::after {
+  content: "";
+  position: absolute;
+  background: rgba(230, 230, 230, 0.7);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 90%;
+  top: 10%;
+  width: 2px;
+  height: 0%; }
+
 #program .program-content {
     position: relative;
     flex: 1 1 40%;
@@ -240,8 +285,8 @@
 #program .plus {
     display: none;
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 10%;
+    right: 8%;
 }
 
 #program .plus img {
@@ -268,7 +313,7 @@
 #program .program-content:hover .plus {
     display: block;
     cursor: pointer;
-    animation: fade 0.5s ease-in;
+    animation: fade-in 0.5s ease-in;
 }
 
 #program .more {
