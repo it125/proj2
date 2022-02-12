@@ -122,6 +122,24 @@ table {
     }
 }
 
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
 /* header */
 #header {
     width: 100%;
@@ -273,7 +291,7 @@ table {
 }
 
 #footer .f-info {
-    width: 100%;
+    width: auto;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     text-align: center;

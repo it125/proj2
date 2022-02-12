@@ -577,9 +577,19 @@
 #news .news-contents::before {
     content: '';
     border-top: 5px solid #000;
-    width: 100%;
+    width: 1000px;
     position: absolute;
     top: 0;
+    margin: -30px 0;
+    text-align: center;
+}
+
+#news .news-contents::after {
+    content: '';
+    border-top: 3px solid #000;
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
     margin: -30px 0;
     text-align: center;
 }
@@ -587,6 +597,7 @@
 #news .news-content {
     width: 100%;
     flex: 3;
+    padding: 0 20px;
 }
 
 #news .news-content::before {
@@ -594,9 +605,9 @@
     height: 80%;
     border-right: 3px solid #999;
     position: absolute;
-    top: 35px;
+    top: 40px;
     display: block;
-    margin: 0 -25px;
+    margin-left: -25px;
 }
 
 #news .news-content:nth-child(1)::before {
@@ -607,20 +618,35 @@
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-#news .news-content span {
+#news .news-content > span {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-#news .news-content p {
+#news .news-content > span:nth-child(4) {
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #626262;
+}
+
+#news .news-content > p {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     line-height: 25px;
+    margin-bottom: 10px;
+}
+
+#news .news-content figure {
+    position: absolute;
+    bottom: 0;
+    margin-left: 265px;
 }
 
 #sns {
@@ -644,12 +670,16 @@
     width: 1024px;
     margin: 0 auto;
     display: flex;
-    /* flex-direction: row; */
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #sns .sns-content {
-    /* align-items: flex-start; */
+    align-items:center;
+}
+
+#sns .sns-content figure img {
+    width: 100%;
 }
 
 #newsletter {
@@ -665,6 +695,10 @@
 }
 
 #market {
+    width: 100%;
+}
+
+#market figure img {
     width: 100%;
 }
 
