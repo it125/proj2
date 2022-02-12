@@ -1,5 +1,5 @@
 $('#program .plus').on({
-    "mouseover": function () {
+    "mouseenter": function () {
         $(this).css({ 'animation': 'rotate1 0.5s ease-in-out' });
     },
     "mouseout": function () {
