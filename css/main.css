@@ -680,27 +680,72 @@
 }
 
 #sns .sns-content {
-    align-items:center;
+    flex: 1 1 20%;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 #sns .sns-content figure img {
-    width: 100%;
+    width: 300px;
 }
 
 #newsletter {
     width: 100%;
+    margin-bottom: 100px;
+    height: 600px;
+    background: url('../images/newsletter_bg_dark.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-#newsletter .newsletter-contents { 
-
+#newsletter .newsletter-title {
+    margin-bottom: 50px;
+    padding-top: 150px;
 }
 
-#newsletter {
+#newsletter .newsletter-title h2 {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 10px;
+    text-align: center;
+}
 
+#newsletter .newsletter-contents {
+    position: absolute;
+    left: 28%;       
+}
+
+#newsletter .newsletter-contents .newsletter-input {
+    float: left;
+    
+}
+
+#newsletter .newsletter-contents .newsletter-input > input {
+    display: block;
+    width: 550px;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+}
+
+#newsletter .newsletter-contents input {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 56.9178px;
+    border: none;
+    background: #000;
 }
 
 #market {
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #market figure img {
