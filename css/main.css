@@ -251,13 +251,13 @@
 #program .program-content:hover .content-detail-bg {
     display: block;
     cursor: pointer;
-    animation: fade 0.5s ease-in;
+    animation: fade-in 0.5s ease-in;
 }
 
 #program .program-content:hover .content-detail {
     display: block;
     cursor: pointer;
-    animation: fade 0.5s ease-in;
+    animation: fade-in 0.5s ease-in;
 }
 
 #program .program-content:hover .plus {
@@ -367,11 +367,12 @@
 
 #academy .academy-content {
     width: 100%;
-    padding: 110px 0 0;
+    padding: 80px 0 0;
 }
 
 #academy .academy-contents .academy-content span {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-size: 1.2em;
     font-weight: 600;
     color: #fff;
 }
@@ -385,7 +386,7 @@
     color: #000;
     background: #fff;
     font-size: 1.5em;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     padding: 2px;
     display: inline-block;
 }
@@ -399,20 +400,19 @@
 
 #academy .academy-contents .academy-content p:nth-child(2) {
     font-size: 2em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #academy .academy-contents .academy-content p:nth-child(3) {
     font-size: 2.8em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #academy .academy-contents .academy-content p:nth-child(4) {
     font-size: 1.6em;
-    padding: 0 540px;
     line-height: 40px;
-    letter-spacing: -2px;
     margin-bottom: 30px;
+    letter-spacing: 1px;
 }
 
 #academy .academy-content .academy-content-date {
@@ -430,6 +430,7 @@
 #academy .academy-content .more > span {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-weight: unset;
+    font-size: 1em;
     color: #fff;
     text-align: unset;
 }
@@ -466,7 +467,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
 
 #daily .daily-content {
@@ -532,12 +532,6 @@
     background-position: center;
 }
 
-#daily .daily-content:hover {
-    flex: 7;
-    transition: all 1s ease-in-out;
-    cursor: pointer;
-}
-
 #daily .daily-content-cover {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -555,24 +549,39 @@
     display: none;
 }
 
-/* #daily .daily-content:hover .content-text {
-    display: block;
-    animation: fade-in 1.5s ease-in-out;
-} */
-
 #news {
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #news .news-title {
-    
+    margin-bottom: 80px;
+}
+
+#news .news-title h2 {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: center;
 }
 
 #news .news-contents {
+    position: relative;
     width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+}
+
+#news .news-contents::before {
+    content: '';
+    border-top: 5px solid #000;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: -30px 0;
+    text-align: center;
 }
 
 #news .news-content {
@@ -580,13 +589,55 @@
     flex: 3;
 }
 
-#sns {
-    width: 100%;
-    background: cadetblue;
+#news .news-content::before {
+    content: '';
+    height: 80%;
+    border-right: 3px solid #999;
+    position: absolute;
+    top: 35px;
+    display: block;
+    margin: 0 -25px;
 }
 
-#sns .sns-title {
-    
+#news .news-content:nth-child(1)::before {
+    content: none;
+}
+
+#news .news-content h3 {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#news .news-content span {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#news .news-content p {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+#sns {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#sns .sns-title {   
+    margin-bottom: 50px;
+}
+
+#sns .sns-title h2 {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: center;
 }
 
 #sns .sns-contents {

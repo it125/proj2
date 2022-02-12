@@ -647,7 +647,7 @@
                     </div>
                     <p>2021 씨네페미니즘학교</p>
                     <p>우리를 둘러싼 소음(들)</p>
-                    <p>여성 창작자들의 영감을 준 영화들을 함께 관람하고 이야기를 듣고 나누는 방식으로 진행되는 강좌입니다.</p>
+                    <p>여성 창작자들의 영감을 준 영화들을<br />함께 관람하고 이야기를 듣고 나누는<br />방식으로 진행되는 강좌입니다.</p>
                     <div class="academy-content-date">
                         <span>2021년 5월 27일 ~ 6월 24일 매주 목요일 7시 (약 3시간)</span>
                     </div>
@@ -742,7 +742,6 @@
                     </div>
                     <div class="daily-content-cover"></div>
                 </div>
-                
             </div>
         </section>
         <section id="news">
@@ -752,7 +751,7 @@
             <div class="news-contents">
                 <div class="news-content">
                     <h3>공지사항</h3>
-                    <span>[알림]</span>
+                    <span>[마감]</span>
                     <p>제24회 서울국제여성영화제 사무국 스태프 2차 모집</p>
                     <span>2022.01.27</span>
                 </div>
@@ -760,7 +759,7 @@
                 <div class="news-content">
                     <h3>언론보도</h3>
                     <span>[INTERVIEW]</span>
-                    <p>제23회 서울국제여성영화제 황미요조 프로그래머</p>
+                    <p>제23회 서울국제여성영화제 황미요조 프로그래머 - ②함께 하는 이들을 돕는 영화제가 되고 싶다</p>
                     <span>2021.09.07</span>
                 </div>
                 <figure><img src="./images/plus.png" alt="더보기"></figure>
@@ -922,6 +921,17 @@
                 1000: {
                     items: 5
                 }
+            }
+        });
+    </script>
+
+    <script>
+        $('.daily-content').on({
+            "mouseover": function() {
+                $(this).css({'flex': '7'}).css({'transition': 'all 1s ease-in-out'}).css({'cursor': 'pointer'});
+            },
+            "mouseout": function() {
+                $(this).css({'flex': '1'}).css({'transition': 'all 1s ease-in-out'}).css({'cursor': 'pointer'});
             }
         });
     </script>
