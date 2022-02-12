@@ -104,12 +104,21 @@ table {
 }
 
 /* animation */
-@keyframes fade {
+@keyframes fade-in {
     0% {
         opacity: 0%;
     }
     100% {
         opacity: 100%;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 100%
+    }
+    100% {
+        opacity: 0%;
     }
 }
 
@@ -191,12 +200,12 @@ table {
 
 #header nav .gnb:hover .lnb {
     display: block;
-    animation: fade 0.5s ease-in;
+    animation: fade-in 0.5s ease-in;
 }
 
 #header nav .gnb > li:hover > a {
     font-weight: 800;
-    animation: fade 1s ease-in-out;
+    animation: fade-in 1s ease-in-out;
 }
 
 #header nav .lnb {

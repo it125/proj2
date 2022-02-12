@@ -321,6 +321,7 @@
 
 #academy {
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #academy .academy-title {
@@ -353,7 +354,6 @@
 #academy .academy-contents {
     width: 100%;
     height: 600px;
-    margin-bottom: 100px;
     background: url('../images/academy1_bg_dark.png');
     background-attachment: fixed;
     background-position: center;
@@ -446,6 +446,7 @@
 
 #daily {
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #daily .daily-title {
@@ -464,54 +465,100 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 
 }
 
 #daily .daily-content {
+    position: relative;
+    flex: 1;
     width: 100%;
-    height: 800px;
+    height: 900px;
     text-align: center;
 }
 
-#daily .daily-content > span { 
+#daily .daily-content .content-day {
+    position: relative;
+    top: 50%;
+    z-index: 5;
+}
+
+#daily .daily-content .content-day > span { 
     font-family: 'Gloss And Bloom', sans-serif;
-    font-size: 1.6em;
+    font-size: 2.5em;
+    color: #fff;
     display: inline-block;
+}
+
+#daily .daily-content .content-text {
+    position: relative;
+    top: 50%;
+    z-index: 5;
+    display: none;
+}
+
+#daily .daily-content .content-text > p {   
+    font-family: 'SpoqaHanSansNeo-Medium', sans-serif;
+    font-size: 2em;
 }
 
 #daily .daily-contents .content1 {
     background: url('../images/daily1.jpg') no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 #daily .daily-contents .content2 {
     background: url('../images/daily2.jpg') no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 #daily .daily-contents .content3 {
     background: url('../images/daily3.jpg') no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 #daily .daily-contents .content4 {
     background: url('../images/daily4.jpg') no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 #daily .daily-contents .content5 {
     background: url('../images/daily5.jpg') no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 #daily .daily-contents .content6 {
     background: url('../images/daily6.jpg') no-repeat;
-    background-size: cover;
+    background-position: center;
+}
+
+#daily .daily-content:hover {
+    flex: 7;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
 }
 
 #daily .daily-content-cover {
-    
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+#daily .daily-content:hover .daily-content-cover {
+    display: none;
+}
+
+#daily .daily-content:hover .content-day {
+    display: none;
+}
+
+/* #daily .daily-content:hover .content-text {
+    display: block;
+    animation: fade-in 1.5s ease-in-out;
+} */
 
 #news {
     width: 100%;
