@@ -139,6 +139,30 @@
     flex: 1 1 40%;
 }
 
+#program .program-content:nth-child(1) {
+    margin: 0 50px 50px 0;
+}
+
+#program .program-content:nth-child(2) {
+    margin: 0 0 50px;
+}
+
+#program .program-content:nth-child(3) {
+    margin: 0 50px 50px 0;
+}
+
+#program .program-content:nth-child(4) {
+    margin: 0 0 50px;
+}
+
+#program .program-content:nth-child(5) {
+    margin: 0 50px 0 0;
+}
+
+#program .program-content img {
+    width: 100%;
+}
+
 #program .program-content::before {
     box-sizing: inherit;
 	content: "";
@@ -178,30 +202,6 @@
 	height:100%;
 	opacity:1;
 	transition: width 0.5s ease-in-out, height 0.5s ease-in-out 0.2s;
-}
-
-#program .program-content:nth-child(1) {
-    margin: 0 50px 50px 0;
-}
-
-#program .program-content:nth-child(2) {
-    margin: 0 0 50px;
-}
-
-#program .program-content:nth-child(3) {
-    margin: 0 50px 50px 0;
-}
-
-#program .program-content:nth-child(4) {
-    margin: 0 0 50px;
-}
-
-#program .program-content:nth-child(5) {
-    margin: 0 50px 0 0;
-}
-
-#program .program-content img {
-    width: 100%;
 }
 
 #program .content-detail-bg {
@@ -358,7 +358,7 @@
 #pitch .pitch-contents p {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 1.7em;
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
@@ -397,7 +397,7 @@
     background: #e3e3e3;
 }
 
-#academy .academy-contents {
+#academy .academy-content {
     width: 100%;
     height: 600px;
     background: url("../images/academy1_bg_dark.png");
@@ -456,9 +456,16 @@
 
 #academy .academy-contents .academy-content p:nth-child(4) {
     font-size: 1.6em;
-    line-height: 40px;
+    line-height: 35px;
     margin-bottom: 30px;
-    letter-spacing: 1px;
+}
+
+#academy .academy-content {
+    display: none;
+}
+
+#academy .content1 {
+    display: block;
 }
 
 #academy .academy-content .academy-content-date {
