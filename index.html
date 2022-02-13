@@ -407,7 +407,8 @@
                             <span>15+</span>
                             <span>color</span>
                             <p>
-                                코로나19 팬데믹 속 이동 제한이 권고되는 헤이그에서 감독은 서울의 동생에게 영상편지 연작을 전송한다. 우리는 '올드 노멀'을 돌려받기를 원하나?<br />이 오토
+                                코로나19 팬데믹 속 이동 제한이 권고되는 헤이그에서 감독은 서울의 동생에게 영상편지 연작을 전송한다. 우리는 '올드 노멀'을 돌려받기를 원하나?<br />이
+                                오토
                                 픽션 다큐멘터리는 한국과 네덜란드의 역학 조사, 생물 정치와 군중 통제 맥락을 병치하며 국가적/개인적 감시가 서울의 퀴어 커뮤니티와 유럽의 아시아계 커뮤니티의
                                 낙인화와 폭력에 기여하는 과정을 탐구한다.​
                             </p>
@@ -507,7 +508,7 @@
                             <span>한국</span>
                         </div>
                         <p>
-                            미투 운동이 한국 사회를 거세게 뒤흔든 지 3년, <br /> 
+                            미투 운동이 한국 사회를 거세게 뒤흔든 지 3년, <br />
                             우리 사회는 얼마나 달라졌을까.
                         </p>
                     </div>
@@ -589,7 +590,7 @@
                         <div class="content-detail-director">
                             <span>아이노아 로드리게스</span>
                             <span>스페인</span>
-                        </div>                        
+                        </div>
                         <p>인구가 줄어들고 있는 스페인 시골 지역의 작은 마을에 사는<br />여성들의 억눌린 욕구를 블랙 코미디 형식으로 그려낸 영화이다.</p>
                     </div>
                     <figure class="plus"><img src="./images/plus.png" alt="더보기"></figure>
@@ -623,7 +624,8 @@
                 <h2>PITCH & CATCH</h2>
             </div>
             <div class="pitch-contents">
-                <p>피치&캐치는 여성 창작자의 기획 개발 및 피칭 지원 프로그램으로<br />국내외에서 제작/발표되지 않은 극영화, 다큐멘터리 장편 프로젝트를<br />발굴하고 육성하는 공개 피칭 프로그램입니다.</p>
+                <p>피치&캐치는 여성 창작자의 기획 개발 및 피칭 지원 프로그램으로<br />국내외에서 제작/발표되지 않은 극영화, 다큐멘터리 장편 프로젝트를<br />발굴하고 육성하는 공개 피칭
+                    프로그램입니다.</p>
             </div>
         </section>
         <section id="academy">
@@ -632,9 +634,9 @@
             </div>
             <div class="academy-menu">
                 <label>
-                    <select name="academy">
-                        <option value="academy1">열린강좌</option>
-                        <option value="academy2">집중강좌</option>
+                    <select name="academy" id="academyTab" class="academy-tab">
+                        <option value="academy1" id="select1">열린강좌</option>
+                        <option value="academy2" id="select2">집중강좌</option>
                     </select>
                 </label>
             </div>
@@ -659,8 +661,8 @@
                         <span>집중강좌</span>
                     </div>
                     <p>2021 씨네페미니즘학교</p>
-                    <p>페미니스트 비평: 긴장의 번역(nervous translation) </p>
-                    <p>영화의 페미니즘적 비평의 기반을 마련하는 필수 이론 강좌입니다.</p>
+                    <p>페미니스트 비평: 긴장의 번역<br />(nervous translation) </p>
+                    <p>영화의 페미니즘적 비평의 기반을 마련하는<br />필수 이론 강좌입니다.</p>
                     <div class="academy-content-date">
                         <span>2021년 7월 1일 ~ 7월 29일 매주 목요일 오후 7시 (약 3시간) </span>
                     </div>
@@ -685,7 +687,7 @@
                     </div>
                     <div class="daily-content-cover"></div>
                 </div>
-                
+
                 <div class="daily-content content2">
                     <div class="content-day">
                         <span>DAY 2</span>
@@ -695,7 +697,7 @@
                     </div>
                     <div class="daily-content-cover"></div>
                 </div>
-                
+
                 <div class="daily-content content3">
                     <div class="content-day">
                         <span>DAY 3</span>
@@ -705,7 +707,7 @@
                     </div>
                     <div class="daily-content-cover"></div>
                 </div>
-                
+
                 <div class="daily-content content4">
                     <div class="content-day">
                         <span>DAY 4</span>
@@ -726,7 +728,7 @@
                     </div>
                     <div class="daily-content-cover"></div>
                 </div>
-                
+
                 <div class="daily-content content6">
                     <div class="content-day">
                         <span>DAY 6</span>
@@ -794,6 +796,10 @@
                 <div class="sns-content">
                     <div class="sns-content-cover"></div>
                     <figure><img src="./images/sns6.jpg" alt="SNS 내용 보기"></figure>
+                </div>
+                <div class="sns-content">
+                    <div class="sns-content-cover"></div>
+                    <figure><img src="./images/sns7.jpg" alt="SNS 내용 보기"></figure>
                 </div>
             </div>
         </section>
@@ -896,14 +902,40 @@
     </script>
     <script src="./js/owl.carousel.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            items: 6,
+        // $('.owl-carousel').owlCarousel({
+        //     items: 6,
+        //     loop: true,
+        //     margin: 50,
+        //     nav: false,
+        //     center: true,
+        //     autoplay: true,
+        //     autoplayTimeout: 4000,
+        //     autoplaySpeed: 1500,
+        //     autoplayHoverPause: false,
+        //     responsiveClass: true,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         600: {
+        //             items: 3
+        //         },
+        //         1000: {
+        //             items: 5
+        //         }
+        //     }
+        // });
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 7,
             loop: true,
-            margin: 10,
-            nav: false,
+            margin: 50,
             autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: false,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            autoplayTimeout: 4000,
+            autoplaySpeed: 1500,
+            responsiveClass: true,
             responsive: {
                 0: {
                     items: 1
