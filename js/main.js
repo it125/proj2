@@ -39,18 +39,22 @@ $('#academy .more').on({
     }
 });
 
-$('.daily-content').on({
-    "mouseover": function () {
-        $(this)
-            .css({'flex': '7'})
-            .css({'transition': 'all 1s ease-in-out'})
-            .css({'cursor': 'pointer'});
-    },
-    "mouseout": function () {
-        $(this)
-            .css({'flex': '1'})
-            .css({'transition': 'all 1s ease-in-out'})
-            .css({'cursor': 'pointer'});
+$(window).resize(function () {
+    if (window.innerWidth > 1023) {
+        $('.daily-content').on({
+            "mouseover": function () {
+                $(this)
+                    .css({'flex': '7'})
+                    .css({'transition': 'all 1s ease-in-out'})
+                    .css({'cursor': 'pointer'});
+            },
+            "mouseout": function () {
+                $(this)
+                    .css({'flex': '1'})
+                    .css({'transition': 'all 1s ease-in-out'})
+                    .css({'cursor': 'pointer'});
+            }
+        });
     }
 });
 
