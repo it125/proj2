@@ -1192,6 +1192,10 @@
         display: none;
     }
 
+    #program .program-title h2 {
+        font-size: 2.5em;
+    }
+
     #program .program-contents {
         width: 80%;
         display: flex;
@@ -1267,6 +1271,14 @@
         color: #000;
     }
 
+    #pitch .pitch-title h2 {
+        font-size: 2.5em;
+    }
+
+    #academy .academy-title h2 {
+        font-size: 2.5em;
+    }
+
     #daily .daily-contents {
         width: 100%;
         height: 100%;
@@ -1277,6 +1289,10 @@
         width: 100%;
     }
 
+    #news .news-title h2 {
+        font-size: 2.5em;
+    }
+    
     #news .news-contents {
         width: 100%;
         display: flex;
@@ -1291,8 +1307,16 @@
         width: 100%;
     }
 
+    #sns .sns-title h2 {
+        font-size: 2.5em;
+    }
+
     #sns .sns-contents {
         width: 100%;
+    }
+
+    #newsletter .newsletter-title h2 {
+        font-size: 2.5em;
     }
 
     #market .market-text {
@@ -1303,6 +1327,10 @@
 @media all and (min-width: 319px) and (max-width: 479px) {
     #main .main-contents {
         display: none;
+    }
+
+    #program .program-title h2 {
+        font-size: 2.5em;
     }
     
     #program {
@@ -1342,16 +1370,38 @@
         display: none;
     }
 
+    #pitch .pitch-title h2 {
+        font-size: 2.5em;
+    }
+
+    #academy .academy-title h2 {
+        font-size: 2.5em;
+    }
+
+    #daily .daily-title h2 {
+        font-size: 2.5em;
+    }
+
     #daily .daily-contents {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        height: 100%;
+        display: block;
     }
 
     #daily .daily-content {
         width: 100%;
-        height: 200px;
-        flex: 1 1 40%;
+    }
+
+    #news .news-title h2 {
+        font-size: 2.5em;
+    }
+
+    #sns .sns-title h2 {
+        font-size: 2.5em;
+    }
+
+    #newsletter .newsletter-title h2 {
+        font-size: 2.5em;
     }
 
     #market .market-text {
@@ -1362,6 +1412,24 @@
 @media all and (max-width: 320px) {
     #main .main-contents {
         display: none;
+    }
+
+    #program .program-title h2 {
+        font-size: 2.5em;
+    }
+
+    #pitch .pitch-title h2 {
+        font-size: 2.5em;
+    }
+
+    #daily .daily-contents {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    #daily .daily-content {
+        width: 100%;
     }
 
     #market .market-text {
