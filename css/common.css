@@ -504,7 +504,15 @@ table {
         position: relative;
         margin-top: 8px;
     }
+
+    #header .h-wrap .gnb a {
+        font-size: 1em;
+    }
     
+    #header .h-wrap .lnb a {
+        font-size: 0.9em;
+    }
+
     #header .archive {
         margin-left: 30px;
     }
