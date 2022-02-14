@@ -1,8 +1,3 @@
-// $('#program .plus').on({     "mouseover": function () {         $(this).css({
-// 'animation': 'rotate1 0.5s ease-in-out' });     },     "mouseout": function
-// () {         $(this).css({ 'animation': 'none' }).css({ 'animation': 'rotate2
-// 0.5s ease-in-out' });     } });
-
 $('#program .plus').mouseover(function () {
     $(this).css({'animation': 'rotate1 0.5s ease-in-out'});
 });
@@ -140,19 +135,32 @@ $('.news-content:nth-child(3) figure').on({
     }
 });
 
-// var selectTab = document.getElementById("academyTab"); 
-// var con = document.getElementsByClassName("academy-content");
-// selectTab.addEventListener("change", function () {
-//     var val = selectTab.options[selectTab.selectedIndex].value;
-//     for (var i = 0; i < selectTab.length; i++) { 
-//         con[i].style.display = "none";
-//         if (val == "academy1") {
-//             con[i].style.display = "block";
-//             documnet.getElementById("select1").selected = true;
-//         } else if (val == "academy2") {
-//             con[1].style.display = "block";
-//             documnet.getElementById("select2").selected = true;
-//             $('.academy-content').css({'background': 'url(../images/academy2_bg_dark.png)'}); 
-//         }
-//     }
-// });
+var selectTab = document.getElementById("academyTab");
+var con = document.getElementsByClassName("academy-content");
+selectTab.addEventListener("change", function () {
+    var val = selectTab
+        .options[selectTab.selectedIndex]
+        .value;
+    for (var i = 0; i < selectTab.length; i++) {
+        con[i].style.display = "none";
+        if (val == "academy1") {
+            con[0].style.display = "block";
+            con[1].style.display = "none";
+            documnet
+                .getElementById("select1")
+                .selected = true;
+        } else if (val == "academy2") {
+            con[1].style.display = "block";
+            documnet
+                .getElementById("select2")
+                .selected = true;
+        }
+    }
+});
+
+// btn
+$('.top').click(function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+});

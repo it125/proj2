@@ -441,7 +441,7 @@
             </div>
         </section>
         <section id="program">
-            <div class="title">
+            <div class="title animate__fadeInUpBig">
                 <h2>PROGRAM</h2>
             </div>
             <!-- <div class="program-menu">
@@ -467,7 +467,7 @@
                 <div class="programs-more-button">
                     <figure><img src="./images/select_more.png" alt="더보기" /></figure>
                 </div> -->
-            <div class="program-menu">
+            <div class="program-menu animate__fadeInUpBig">
                 <label>
                     <select name="programs">
                         <option value="program1">발견</option>
@@ -492,7 +492,7 @@
                     <figure><img src="./images/select_more.png" alt="더보기" /></figure>
                 </div>
             </div>
-            <div class="program-contents">
+            <div class="program-contents animate__fadeInUpBig">
                 <div class="program-content">
                     <figure>
                         <img src="./images/program1.jpg" alt="영화 썸네일">
@@ -529,7 +529,7 @@
                             <span>우크라이나</span>
                         </div>
                         <p>
-                            더 나은 대안이 주어지지 않을 때 사랑하는 이들과 도덕적 선택<br />
+                            더 나은 대안이 주어지지 않을 때 사랑하는 이들과 도덕적 선택
                             사이에서 결정을 내려야 하는 사람들에 대한 영화이다.
                         </p>
                     </div>
@@ -550,7 +550,7 @@
                             <span>미국</span>
                         </div>
                         <p>
-                            만난 적 없던 두 사람은 어느 날 우연히 서로를 마주하고,<br />
+                            만난 적 없던 두 사람은 어느 날 우연히 서로를 마주하고,
                             시간을 함께 보내며 그들은 우정을 찾으려 노력한다.
                         </p>
                     </div>
@@ -571,7 +571,7 @@
                             <span>한국</span>
                         </div>
                         <p>
-                            자식에게 생각지 못한 커밍아웃을 받은 두 엄마가 '성 소수자 부모'<br />
+                            자식에게 생각지 못한 커밍아웃을 받은 두 엄마가 '성 소수자 부모'
                             라는 새 정체성을 맞닥뜨린다.
                         </p>
                     </div>
@@ -591,7 +591,7 @@
                             <span>아이노아 로드리게스</span>
                             <span>스페인</span>
                         </div>
-                        <p>인구가 줄어들고 있는 스페인 시골 지역의 작은 마을에 사는<br />여성들의 억눌린 욕구를 블랙 코미디 형식으로 그려낸 영화이다.</p>
+                        <p>인구가 줄어들고 있는 스페인 시골 지역의 작은 마을에 사는 여성들의 억눌린 욕구를 블랙 코미디 형식으로 그려낸 영화이다.</p>
                     </div>
                     <figure class="plus"><img src="./images/plus.png" alt="더보기"></figure>
                 </div>
@@ -674,10 +674,10 @@
             </div>
         </section>
         <section id="daily">
-            <div class="daily-title">
+            <div class="daily-title animate__fadeInUpBig">
                 <h2>DAILY</h2>
             </div>
-            <div class="daily-contents">
+            <div class="daily-contents animate__fadeInUpBig">
                 <div class="daily-content content1">
                     <div class="content-day">
                         <span>DAY 1</span>
@@ -769,10 +769,10 @@
             </div>
         </section>
         <section id="sns">
-            <div class="sns-title">
+            <div class="sns-title animate__fadeInUpBig">
                 <h2>SNS</h2>
             </div>
-            <div class="sns-contents">
+            <div class="sns-contents animate__fadeInUpBig">
                 <div class="sns-content">
                     <div class="sns-content-cover"></div>
                     <figure><img src="./images/sns1.jpg" alt="SNS 내용 보기"></figure>
@@ -818,7 +818,13 @@
             </div>
         </section>
         <section id="market">
-            <figure><img src="./images/market_bg.png" alt="굿즈마켓 이동하기"></figure>
+            <figure><img src="./images/market_bg.png" alt="SIWFF 굿즈마켓"></figure>
+            <div class="market-cover">
+                <div class="market-text">
+                    <p>제23회 SIWFF 굿즈마켓 바로가기</p>
+                    <p>🛒상시 운영 중🛒</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer id="footer">
@@ -877,7 +883,17 @@
             </div>
         </div>
     </footer>
-    <div class="btn"></div>
+    
+    <div class="btn">
+        <ul>
+            <li class="ticket">
+                <img src="./images/ticket_box.png" alt="예매하기">
+            </li>
+            <li class="top">
+                <img src="./images/top.png" alt="맨 위로">
+            </li>
+        </ul>
+    </div>
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
@@ -902,34 +918,10 @@
     </script>
     <script src="./js/owl.carousel.js"></script>
     <script>
-        // $('.owl-carousel').owlCarousel({
-        //     items: 6,
-        //     loop: true,
-        //     margin: 50,
-        //     nav: false,
-        //     center: true,
-        //     autoplay: true,
-        //     autoplayTimeout: 4000,
-        //     autoplaySpeed: 1500,
-        //     autoplayHoverPause: false,
-        //     responsiveClass: true,
-        //     responsive: {
-        //         0: {
-        //             items: 1
-        //         },
-        //         600: {
-        //             items: 3
-        //         },
-        //         1000: {
-        //             items: 5
-        //         }
-        //     }
-        // });
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-            items: 7,
             loop: true,
-            margin: 50,
+            margin: 150,
             autoplay: true,
             autoplayTimeout: 1000,
             autoplayHoverPause: true,
@@ -944,12 +936,22 @@
                     items: 3
                 },
                 1000: {
-                    items: 5
+                    items: 6
                 }
             }
         });
     </script>
 
+    <script src="./js/scrollreveal.js"></script>
+    <script>
+        var options = {
+            delay: 100,
+            duration: 1500,
+            distance: '45%',
+            easing: 'ease-in-out'
+        };
+        ScrollReveal().reveal('.animate__fadeInUpBig', options);
+    </script>
 </body>
 
 </html>
