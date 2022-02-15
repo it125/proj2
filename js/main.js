@@ -168,3 +168,7 @@ $('.top').click(function () {
         scrollTop: 0
     }, 1000);
 });
+
+$('.ticket').click(function() {
+    alert('예매 기간이 아닙니다.');
+})
