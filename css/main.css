@@ -77,12 +77,12 @@
     margin: 100px 0;
 }
 
-#program .title {
+#program .program-title {
     width: 100%;
     margin-bottom: 50px;
 }
 
-#program .title h2 {
+#program .program-title h2 {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
     font-weight: 600;
     font-size: 3em;
@@ -809,11 +809,12 @@
 }
 
 .btn {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     bottom: 0;
     z-index: 10;
 }
+
 .btn ul {
     height: 100%;
     overflow: hidden;
@@ -1485,9 +1486,9 @@
     }
 
     #news .news-content {
-        width: 100%;
-        flex: 1;
-        padding:0;
+        width: 500px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     #news .news-content::before {
@@ -1587,18 +1588,19 @@
     #program .program-title h2 {
         font-size: 2.5em;
     }
+
+    #program .program-menu select {
+        width: 100%;
+    }
     
     #program {
         width: 100%;
     }
-
+    
     #program .program-contents {
         width: 80%;
         display: flex;
         flex-direction: column;
-    }
-
-    #program .program-content {
     }
 
     #program .program-content:nth-child(1) {
@@ -1623,6 +1625,10 @@
 
     #program .program-content:nth-child(6) {
         display: none;
+    }
+
+    #pitch .pitch-title h2 {
+        font-size: 2.5em;
     }
 
     #pitch .pitch-contents p {
@@ -1693,7 +1699,7 @@
 
     #news .news-content {
         width: 100%;
-        flex: 1;
+        padding: 0;
     }
 
     #news .news-content::before {
@@ -1755,7 +1761,7 @@
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 400px;
+        width: 100%;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -1764,7 +1770,7 @@
     #newsletter .newsletter-contents input {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1em;
         color: #fff;
         width: 100%;
         padding: 20px;
@@ -1782,8 +1788,46 @@
         display: none;
     }
 
+    #program {
+        width: 100%;
+    }
+    
+    #program .program-contents {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #program .program-content:nth-child(1) {
+        margin: 0;
+    }
+
+    #program .program-content:nth-child(2) {
+        margin: 0;
+    }
+
+    #program .program-content:nth-child(3) {
+        margin: 0;
+    }
+
+    #program .program-content:nth-child(4) {
+        margin: 0;
+    }
+
+    #program .program-content:nth-child(5) {
+        display: none;
+    }
+
+    #program .program-content:nth-child(6) {
+        display: none;
+    }
+
     #program .program-title h2 {
         font-size: 2.5em;
+    }
+
+    #program .program-menu select {
+        width: 100%;
     }
 
     #pitch .pitch-contents p {
@@ -1793,6 +1837,10 @@
 
     #academy .academy-title h2 {
         font-size: 2.5em;
+    }
+
+    #academy .academy-menu select {
+        width: 100%;
     }
 
     #academy .academy-contents .academy-content span {
@@ -1889,13 +1937,17 @@
         margin-bottom: 0;
     }
 
+    #newsletter .newsletter-title h2 {
+        font-size: 2.5em;
+    }
+
     #newsletter .newsletter-contents .newsletter-input {
         float: unset;
     }
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 400px;
+        width: 100%;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -1904,14 +1956,13 @@
     #newsletter .newsletter-contents input {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1em;
         color: #fff;
         width: 100%;
         padding: 20px;
         border: none;
         background: #000;
     }
-
 
     #market .market-text {
         display: none;
