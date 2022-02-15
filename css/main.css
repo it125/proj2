@@ -1761,7 +1761,7 @@
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 100%;
+        width: 300px;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -1770,7 +1770,7 @@
     #newsletter .newsletter-contents input {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1em;
+        font-size: 1.2em;
         color: #fff;
         width: 100%;
         padding: 20px;
@@ -1785,40 +1785,6 @@
 
 @media all and (max-width: 320px) {
     #main .main-contents {
-        display: none;
-    }
-
-    #program {
-        width: 100%;
-    }
-    
-    #program .program-contents {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #program .program-content:nth-child(1) {
-        margin: 0;
-    }
-
-    #program .program-content:nth-child(2) {
-        margin: 0;
-    }
-
-    #program .program-content:nth-child(3) {
-        margin: 0;
-    }
-
-    #program .program-content:nth-child(4) {
-        margin: 0;
-    }
-
-    #program .program-content:nth-child(5) {
-        display: none;
-    }
-
-    #program .program-content:nth-child(6) {
         display: none;
     }
 
@@ -1937,17 +1903,13 @@
         margin-bottom: 0;
     }
 
-    #newsletter .newsletter-title h2 {
-        font-size: 2.5em;
-    }
-
     #newsletter .newsletter-contents .newsletter-input {
         float: unset;
     }
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 100%;
+        width: 400px;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -1956,13 +1918,14 @@
     #newsletter .newsletter-contents input {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1em;
+        font-size: 1.2em;
         color: #fff;
         width: 100%;
         padding: 20px;
         border: none;
         background: #000;
     }
+
 
     #market .market-text {
         display: none;
