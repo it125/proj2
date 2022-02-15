@@ -517,12 +517,12 @@
 #daily .daily-content .content-text > p {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 22px;
 }
 
 #daily .daily-content .content-text > p:nth-child(2n-1) {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 600;
 }
 
@@ -1532,9 +1532,9 @@
         width: 100%;
     }
 
-    #daily .daily-content .content-text {
+    /* #daily .daily-content .content-text {
         display: block;
-    }
+    } */
 
     #news .news-title h2 {
         font-size: 2em;
@@ -1645,6 +1645,14 @@
     #main .main-contents {
         display: none;
     }
+
+    /* .swiper-button-prev,
+    .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    } */
 
     #program .program-title h2 {
         font-size: 1.5em;
