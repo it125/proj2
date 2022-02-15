@@ -1476,10 +1476,14 @@
         font-weight: 600;
         font-size: 1.2em;
         color: #fff;
-        width: 400px;
+        width: 100%;
         padding: 20px;
         border: none;
         background: #000;
+    }
+
+    #sns .sns-content figure img {
+        width: 100%;
     }
 
     #market .market-text {
