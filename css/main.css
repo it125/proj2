@@ -506,14 +506,24 @@
 
 #daily .daily-content .content-text {
     position: relative;
-    top: 50%;
+    top: 53%;
     z-index: 5;
     display: none;
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
 }
 
 #daily .daily-content .content-text > p {
-    font-family: 'SpoqaHanSansNeo-Medium', sans-serif;
-    font-size: 2em;
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    line-height: 22px;
+}
+
+#daily .daily-content .content-text > p:nth-child(2n-1) {
+    font-size: 0.7em;
+    font-weight: 600;
 }
 
 #daily .daily-contents .content1 {
@@ -809,17 +819,16 @@
 }
 
 .btn {
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    bottom: 0;
+    bottom: 30px;
+    right: 30px;
     z-index: 10;
 }
 
 .btn ul {
-    height: 100%;
     overflow: hidden;
     float: right;
-    margin: 30px;
 }
 
 .btn ul li {
@@ -1345,6 +1354,12 @@
         font-size: 2em;
     }
 
+    #program .program-menu select {
+        width: 80%;
+        font-size: 0.9em;
+        padding: 10px 10px;
+    }
+
     #program .program-contents {
         width: 80%;
         display: flex;
@@ -1417,13 +1432,35 @@
         margin-bottom: 30px;
     }
 
+    #program .more {
+        position: relative;
+        border: 1px solid #000;
+        width: 150px;
+        padding: 20px;
+        margin: 35px auto;
+    }
+    
+    #program .more > span {
+        font-size: 0.8em;
+    }
+    
+    #program .more figure {
+        position: absolute;
+        top: 40%;
+        right: 10%;
+    }
+
+    #program .more img {
+        width: 60px;
+    }
+
     #pitch .pitch-title h2 {
         font-size: 2em;
     }
 
     #pitch .pitch-contents p {
-        font-size: 1.4em;
-        line-height: 35px;
+        font-size: 1.1em;
+        line-height: 30px;
         padding: 0 50px;
     }
 
@@ -1431,45 +1468,72 @@
         font-size: 2em;
     }
 
-    #academy .academy-contents .academy-content span {
+    #academy .academy-menu select {
+        width: 80%;
         font-size: 1em;
     }
 
-    #academy .academy-content p {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-        color: #fff;
-        text-align: center;
+    #academy .academy-contents .academy-content span {
+        font-size: 0.8em;
+    }
+
+    #academy .academy-content .academy-content-title > span:nth-child(1) {
+        font-size: 1em;
+        margin-bottom: 20px;
     }
     
     #academy .academy-content p:nth-child(2) {
-        font-size: 1.8em;
+        font-size: 1.2em;
         margin-bottom: 10px;
     }
     
     #academy .academy-content p:nth-child(3) {
-        font-size: 2em;
-        margin-bottom: 20px;
+        font-size: 1.6em;
     }
     
     #academy .academy-content p:nth-child(4) {
-        font-size: 1.4em;
-        line-height: 35px;
+        font-size: 1.1em;
+        line-height: 30px;
         margin-bottom: 30px;
     }
 
-    #academy .academy-title h2 {
+    #academy .academy-content .more {
+        position: relative;
+        border: 1px solid #fff;
+        width: 150px;
+        padding: 20px;
+        margin: 35px auto;
+    }
+    
+    #academy .academy-content .more > span {
+        font-size: 0.8em;
+    }
+    
+    #academy .academy-content .more figure {
+        position: absolute;
+        top: 40%;
+        right: 10%;
+    }
+
+    #academy .academy-content .more img {
+        width: 60px;
+    }
+
+    #daily .daily-title h2 {
         font-size: 2em;
     }
 
     #daily .daily-contents {
         width: 100%;
-        height: 100%;
         display: block;
     }
 
     #daily .daily-content {
         width: 100%;
+    }
+
+    #daily .daily-content .content-text {
+        display: block;
     }
 
     #news .news-title h2 {
@@ -1483,7 +1547,7 @@
     }
 
     #news .news-content {
-        width: 500px;
+        width: 400px;
         margin: 0 auto;
         padding: 0;
     }
@@ -1583,11 +1647,13 @@
     }
 
     #program .program-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #program .program-menu select {
-        width: 100%;
+        width: 80%;
+        font-size: 0.9em;
+        padding: 10px 10px;
     }
     
     #program {
@@ -1667,17 +1733,17 @@
     }
 
     #pitch .pitch-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #pitch .pitch-contents p {
-        font-size: 1.4em;
-        line-height: 35px;
-        padding: 0 10px;
+        font-size: 1em;
+        line-height: 25px;
+        padding: 0 30px;
     }
 
     #academy .academy-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #academy .academy-contents .academy-content span {
@@ -1697,7 +1763,7 @@
     }
     
     #academy .academy-content p:nth-child(3) {
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
     
@@ -1708,11 +1774,11 @@
     }
 
     #academy .academy-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #daily .daily-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #daily .daily-contents {
@@ -1726,7 +1792,7 @@
     }
 
     #news .news-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #news .news-contents {
@@ -1737,7 +1803,8 @@
     }
 
     #news .news-content {
-        width: 100%;
+        width: 300px;
+        margin: 0 auto;
         padding: 0;
     }
 
@@ -1787,11 +1854,11 @@
     }
 
     #sns .sns-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #newsletter .newsletter-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #newsletter .newsletter-contents .newsletter-input {
@@ -1800,7 +1867,7 @@
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 300px;
+        width: 70vw;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -1817,7 +1884,6 @@
         background: #000;
     }
 
-
     #market .market-text {
         display: none;
     }
@@ -1829,7 +1895,7 @@
     }
 
     #program .program-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #program .program-menu select {
@@ -1914,7 +1980,7 @@
     }
 
     #academy .academy-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #academy .academy-menu select {
@@ -1938,7 +2004,7 @@
     }
     
     #academy .academy-content p:nth-child(3) {
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
     
@@ -2016,7 +2082,7 @@
     }
 
     #newsletter .newsletter-title h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #newsletter .newsletter-contents .newsletter-input {
@@ -2025,7 +2091,7 @@
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 300px;
+        width: 70vw;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -2041,7 +2107,6 @@
         border: none;
         background: #000;
     }
-
 
     #market .market-text {
         display: none;
