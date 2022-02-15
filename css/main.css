@@ -315,6 +315,7 @@
     text-align: center;
     letter-spacing: 1px;
     line-height: 40px;
+    padding: 0 350px;
 }
 
 #academy {
@@ -482,6 +483,7 @@
 }
 
 #daily .daily-content {
+    width: 100%;
     position: relative;
     flex: 1;
     width: 100%;
@@ -753,7 +755,6 @@
     justify-content: center;
 }
 
-
 #newsletter .newsletter-contents .newsletter-input {
     float: left;
 }
@@ -809,15 +810,15 @@
 
 .btn {
     width: 100%;
-    overflow: hidden;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 0;
     z-index: 10;
 }
-
 .btn ul {
+    height: 100%;
+    overflow: hidden;
     float: right;
+    margin: 30px;
 }
 
 .btn ul li {
@@ -1050,6 +1051,10 @@
         width: 30px;
     }
 
+    #pitch .pitch-contents p {
+        padding: 0 100px;
+    }
+
     #daily .daily-content:hover .daily-content-cover {
         display: none;
     }
@@ -1185,6 +1190,7 @@
     #pitch .pitch-contents p {
         font-size: 1.4em;
         line-height: 35px;
+        padding: 0 100px;
     }
 
     #academy .academy-title h2 {
@@ -1413,9 +1419,14 @@
         color: #000;
     }
 
+    #pitch .pitch-title h2 {
+        font-size: 2.5em;
+    }
+
     #pitch .pitch-contents p {
         font-size: 1.4em;
         line-height: 35px;
+        padding: 0 50px;
     }
 
     #academy .academy-title h2 {
@@ -1471,12 +1482,12 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
     }
 
     #news .news-content {
         width: 100%;
         flex: 1;
+        padding:0;
     }
 
     #news .news-content::before {
@@ -1617,6 +1628,7 @@
     #pitch .pitch-contents p {
         font-size: 1.4em;
         line-height: 35px;
+        padding: 0 10px;
     }
 
     #academy .academy-title h2 {

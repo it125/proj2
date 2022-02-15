@@ -295,7 +295,7 @@ table {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 #footer .f-info ul {
@@ -933,11 +933,7 @@ table {
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
         text-align: center;
-        padding: 15px;
-    }
-    
-    #footer .f-info ul {
-        
+        padding: 15px 0;
     }
     
     #footer .f-info ul li {
@@ -1173,7 +1169,7 @@ table {
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
         text-align: center;
-        padding: 15px;
+        padding: 15px 0;
     }
     
     #footer .f-info ul {
@@ -1414,7 +1410,7 @@ table {
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
         text-align: center;
-        padding: 15px;
+        padding: 15px 0;
     }
     
     #footer .f-info ul {
