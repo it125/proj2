@@ -39,7 +39,7 @@ $('#academy .more').on({
     }
 });
 
-$(window).ready(function () {
+$(window).resize(function () {
     if (window.innerWidth > 1023) {
         $('.daily-content').on({
             "mouseover": function () {
