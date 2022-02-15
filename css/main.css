@@ -1479,7 +1479,7 @@
 
     #newsletter .newsletter-contents .newsletter-input > input {
         display: block;
-        width: 400px;
+        width: 300px;
         padding: 20px;
         background: #fff;
         color: #000;
@@ -1488,7 +1488,7 @@
     #newsletter .newsletter-contents input {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1em;
         color: #fff;
         width: 100%;
         padding: 20px;
@@ -1646,6 +1646,29 @@
         font-size: 2.5em;
     }
 
+    #newsletter .newsletter-contents .newsletter-input {
+        float: unset;
+    }
+
+    #newsletter .newsletter-contents .newsletter-input > input {
+        display: block;
+        width: 400px;
+        padding: 20px;
+        background: #fff;
+        color: #000;
+    }
+
+    #newsletter .newsletter-contents input {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+        font-size: 1.2em;
+        color: #fff;
+        width: 100%;
+        padding: 20px;
+        border: none;
+        background: #000;
+    }
+
     #market .market-text {
         display: none;
     }
@@ -1730,6 +1753,30 @@
     #sns .sns-content:last-child {
         margin-bottom: 0;
     }
+
+    #newsletter .newsletter-contents .newsletter-input {
+        float: unset;
+    }
+
+    #newsletter .newsletter-contents .newsletter-input > input {
+        display: block;
+        width: 400px;
+        padding: 20px;
+        background: #fff;
+        color: #000;
+    }
+
+    #newsletter .newsletter-contents input {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+        font-size: 1.2em;
+        color: #fff;
+        width: 100%;
+        padding: 20px;
+        border: none;
+        background: #000;
+    }
+
 
     #market .market-text {
         display: none;
