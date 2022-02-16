@@ -947,6 +947,21 @@
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out 0.2s;
     }
 
+    #program .program-content:nth-child(3) .content-detail {
+        position: absolute;
+        top: 25%;
+    }
+
+    #program .program-content:nth-child(5) .content-detail {
+        position: absolute;
+        top: 25%;
+    }
+
+    #program .program-content:nth-child(6) .content-detail {
+        position: absolute;
+        top: 4.3vw;
+    }
+
     #daily .daily-content:hover .daily-content-cover {
         display: none;
     }
