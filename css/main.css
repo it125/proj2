@@ -1102,6 +1102,10 @@
         padding: 80px 150px;
     }
 
+    #main .main-contents p:nth-child(1) {
+        font-size: 1.5em;
+    }
+
     #main .main-contents p:nth-child(2) {
         font-size: 2.8em;
     }
@@ -1114,6 +1118,11 @@
         display: none;
     }
     
+    #main .main-contents span {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
     #program .title h2 {
         font-size: 2.5em;
     }
@@ -1347,7 +1356,31 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
     #main .main-contents {
+        padding: 10% 15%;
+    }
+
+    #main .main-contents p:nth-child(1) {
+        font-size: 3vw;
+        margin-bottom: 15px;
+    }
+
+    #main .main-contents p:nth-child(2) {
+        font-size: 6vw;
+        margin-bottom: 15px;
+    }
+
+    #main .main-contents p:nth-child(3) {
+        font-size: 5vw;
+        margin-bottom: 15px;
+    }
+
+    #main .main-contents p:nth-child(9) {
         display: none;
+    }
+    
+    #main .main-contents span {
+        font-size: 3vw;
+        margin-bottom: 0;
     }
 
     #program .program-title h2 {
@@ -1643,16 +1676,32 @@
 
 @media all and (min-width: 319px) and (max-width: 479px) {
     #main .main-contents {
-        display: none;
+        padding: 10% 15%;
     }
 
-    /* .swiper-button-prev,
-    .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    } */
+    #main .main-contents p:nth-child(1) {
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+
+    #main .main-contents p:nth-child(2) {
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+
+    #main .main-contents p:nth-child(3) {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    #main .main-contents p:nth-child(9) {
+        display: none;
+    }
+    
+    #main .main-contents span {
+        font-size: 3vw;
+        margin-bottom: 0;
+    }
 
     #program .program-title h2 {
         font-size: 1.5em;
@@ -1899,7 +1948,31 @@
 
 @media all and (max-width: 320px) {
     #main .main-contents {
+        padding: 6% 15%;
+    }
+
+    #main .main-contents p:nth-child(1) {
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+
+    #main .main-contents p:nth-child(2) {
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+
+    #main .main-contents p:nth-child(3) {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    #main .main-contents p:nth-child(9) {
         display: none;
+    }
+    
+    #main .main-contents span {
+        font-size: 3vw;
+        margin-bottom: 0;
     }
 
     #program .program-title h2 {

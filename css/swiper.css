@@ -621,3 +621,67 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px;
 }
+
+
+/* 미디어쿼리 */
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  }
+}
+
+@media all and (min-width: 319px) and (max-width: 479px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  }
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    background-image: url("../images/prev.png");
+    background-size: cover;
+    left: 0px;
+    right: auto;
+  }
+  
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    background-image: url("../images/next.png");
+    background-size: cover;
+    right: 0px;
+    left: auto;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  }
+
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    background-image: url("../images/prev.png");
+    background-size: cover;
+    left: 0px;
+    right: auto;
+  }
+  
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    background-image: url("../images/next.png");
+    background-size: cover;
+    right: 0px;
+    left: auto;
+  }
+}

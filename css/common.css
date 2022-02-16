@@ -636,7 +636,7 @@ table {
     #header .h-wrap {
         width: 100%;
         position: relative;
-        margin-top: 8px;
+        margin-top: 30px;
     }
     
     #header .archive {
@@ -778,7 +778,7 @@ table {
     #header .h-wrap {
         width: 100%;
         position: relative;
-        margin-top: 8px;
+        margin-top: 30px;
     }
     
     #header .archive {
@@ -1013,7 +1013,7 @@ table {
     #header .h-wrap {
         width: 100%;
         position: relative;
-        margin-top: 8px;
+        margin-top: 30px;
     }
     
     #header .archive {
@@ -1057,7 +1057,7 @@ table {
     }
     
     #header .logo img {
-        width: 200px;
+        width: 150px;
     }
     
     #header nav {
@@ -1111,7 +1111,7 @@ table {
     
     #header .search {
         position: absolute;
-        top: 30px;
+        top: 15px;
         left: 10px;
     }
     
@@ -1132,7 +1132,7 @@ table {
 
     #header .hamburger {
         position: absolute;
-        top: 30px;
+        top: 15px;
         right: 10px;
         display: block;
     }
@@ -1254,7 +1254,7 @@ table {
     #header .h-wrap {
         width: 100%;
         position: relative;
-        margin-top: 8px;
+        margin-top: 30px;
     }
     
     #header .archive {
