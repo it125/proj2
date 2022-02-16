@@ -39,7 +39,6 @@ $('#academy .more').on({
     }
 });
 
-
 $('.daily-content').on({
     "mouseover": function () {
         var width = $(window).width();
@@ -60,17 +59,6 @@ $('.daily-content').on({
         }
     }
 });
-
-
-
-// $(window).resize(function() {
-//     var width = $(window).width();
-//     console.log("width1:" + width);
-
-//     if(width > 1023) {
-
-//     }
-// });
 
 $('.news-content:nth-child(1) p').on({
     "mouseover": function () {
@@ -153,6 +141,7 @@ $('.news-content:nth-child(3) figure').on({
     }
 });
 
+// select 탭메뉴
 var selectTab = document.getElementById("academyTab");
 var con = document.getElementsByClassName("academy-content");
 selectTab.addEventListener("change", function () {
