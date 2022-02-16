@@ -39,8 +39,8 @@ $('#academy .more').on({
     }
 });
 
-$(window).resize(function () {
-    if (window.innerWidth > 1023) {
+$(window).resize(function() {
+    if(innerWidth >= 1023) {
         $('.daily-content').on({
             "mouseover": function () {
                 $(this)
@@ -56,7 +56,8 @@ $(window).resize(function () {
             }
         });
     }
-});
+})
+
 
 $('.news-content:nth-child(1) p').on({
     "mouseover": function () {
@@ -172,3 +173,6 @@ $('.top').click(function () {
 $('.ticket').click(function() {
     alert('예매 기간이 아닙니다.');
 })
+
+// hamburger 활성화
+

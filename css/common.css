@@ -216,16 +216,6 @@ table {
     font-size: 1.1em;
 }
 
-#header nav .gnb:hover .lnb {
-    display: block;
-    animation: fade-in 0.5s ease-in;
-}
-
-#header nav .gnb > li:hover > a {
-    font-weight: 800;
-    animation: fade-in 1s ease-in-out;
-}
-
 #header nav .lnb {
     width: 100%;
     margin-top: 30px;
@@ -238,10 +228,6 @@ table {
 
 #header nav .lnb > li > a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-}
-
-#header nav .lnb li:hover a {
-    font-weight: 800;
 }
 
 #header .search {
@@ -269,6 +255,14 @@ table {
 }
 
 #header .hamburger img {
+    width: 28px;
+}
+
+#header .close {
+    display: none;
+}
+
+#header .close img {
     width: 28px;
 }
 
@@ -367,7 +361,23 @@ table {
 }
 
 /* 미디어쿼리 */
-@media all and (min-width:1440px) and (max-width: 1580px) {
+@media all and (min-width: 1580px) {
+    #header nav .gnb:hover .lnb {
+        display: block;
+        animation: fade-in 0.5s ease-in;
+    }
+    
+    #header nav .gnb > li:hover > a {
+        font-weight: 800;
+        animation: fade-in 1s ease-in-out;
+    }
+    
+    #header nav .lnb li:hover a {
+        font-weight: 800;
+    }
+}
+
+@media all and (min-width:1440px) and (max-width: 1579px) {
     /* header */
     #header {
         width: 100%;
@@ -442,6 +452,16 @@ table {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.1em;
     }
+
+    #header nav .gnb:hover .lnb {
+        display: block;
+        animation: fade-in 0.5s ease-in;
+    }
+    
+    #header nav .gnb > li:hover > a {
+        font-weight: 800;
+        animation: fade-in 1s ease-in-out;
+    }
     
     #header nav .gnb:hover .lnb {
         display: block;
@@ -464,6 +484,10 @@ table {
     
     #header nav .lnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    }
+
+    #header nav .lnb li:hover a {
+        font-weight: 800;
     }
     
     #header .search {
@@ -577,6 +601,20 @@ table {
         font-size: 1.1em;
     }
     
+    #header nav .gnb:hover .lnb {
+        display: block;
+        animation: fade-in 0.5s ease-in;
+    }
+    
+    #header nav .gnb > li:hover > a {
+        font-weight: 800;
+        animation: fade-in 1s ease-in-out;
+    }
+    
+    #header nav .lnb li:hover a {
+        font-weight: 800;
+    }
+
     #header nav .gnb:hover .lnb {
         display: block;
         animation: fade 0.3s ease-in;
@@ -761,13 +799,20 @@ table {
     #header .hamburger img {
         width: 27px;
     }
+
+    #header .close {
+        position: absolute;
+        top: 26px;
+        right: 9px;
+    }
+    
+    #header .close img {
+        width: 28px;
+    }
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
-    
-    /* footer */
-    
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) { 

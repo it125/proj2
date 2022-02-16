@@ -398,6 +398,7 @@
 #academy .academy-content p:nth-child(3) {
     font-size: 2.8em;
     margin-bottom: 20px;
+    line-height: 55px;
 }
 
 #academy .academy-content p:nth-child(4) {
@@ -845,7 +846,7 @@
     width: 50px;
 }
 
-@media all and (min-width: 1579px) {
+@media all and (min-width: 1580px) {
     #program .program-content:hover {
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
         transition: all 0.5s ease-in-out;
@@ -908,7 +909,7 @@
 }
 
 /* 미디어쿼리 */
-@media all and (min-width:1440px) and (max-width: 1580px) {
+@media all and (min-width:1440px) and (max-width: 1579px) {
     #program .program-content:hover {
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
         transition: all 0.5s ease-in-out;
