@@ -39,25 +39,38 @@ $('#academy .more').on({
     }
 });
 
-$(window).resize(function() {
-    if(innerWidth >= 1023) {
-        $('.daily-content').on({
-            "mouseover": function () {
-                $(this)
-                    .css({'flex': '7'})
-                    .css({'transition': 'all 1s ease-in-out'})
-                    .css({'cursor': 'pointer'});
-            },
-            "mouseout": function () {
-                $(this)
-                    .css({'flex': '1'})
-                    .css({'transition': 'all 1s ease-in-out'})
-                    .css({'cursor': 'pointer'});
-            }
-        });
-    }
-})
 
+$('.daily-content').on({
+    "mouseover": function () {
+        var width = $(window).width();
+        if(width > 1023) {
+            $(this)
+            .css({'flex': '7'})
+            .css({'transition': 'all 1s ease-in-out'})
+            .css({'cursor': 'pointer'});
+        }
+    },
+    "mouseout": function () {
+        var width = $(window).width();
+        if(width > 1023) {
+            $(this)
+                .css({'flex': '1'})
+                .css({'transition': 'all 1s ease-in-out'})
+                .css({'cursor': 'pointer'});
+        }
+    }
+});
+
+
+
+// $(window).resize(function() {
+//     var width = $(window).width();
+//     console.log("width1:" + width);
+
+//     if(width > 1023) {
+
+//     }
+// });
 
 $('.news-content:nth-child(1) p').on({
     "mouseover": function () {

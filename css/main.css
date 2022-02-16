@@ -695,12 +695,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #sns .sns-content {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 #sns .sns-content-cover {
@@ -1129,7 +1129,7 @@
         margin-bottom: 0;
     }
 
-    #program .title h2 {
+    #program .program-title h2 {
         font-size: 2.5em;
     }
 
@@ -1255,15 +1255,15 @@
 
     #daily .daily-contents {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
     }
 
     #daily .daily-content {
-        width: 100%;
-        height: 500px;
-        flex: 1 1 40%;
+        width: 50%;
+        height: 400px;
+        float: left;
     }
 
     #news .news-title h2 {
@@ -1317,16 +1317,10 @@
 
     #sns .sns-contents {
         width: 100%;
-        justify-content: center;
-    }
-
-    #sns .sns-content {
-        margin-right: 40px;
     }
 
     #sns .sns-content:last-child {
-        margin-right: 40px;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     #sns .sns-title h2 {
@@ -1868,12 +1862,12 @@
 
     #daily .daily-contents {
         width: 100%;
-        height: 100%;
         display: block;
     }
 
     #daily .daily-content {
         width: 100%;
+        height: 350px;
     }
 
     #news .news-title h2 {
@@ -2169,6 +2163,10 @@
         display: none;
     }
 
+    #daily .daily-title h2 {
+        font-size: 1.5em;
+    }
+
     #daily .daily-contents {
         width: 100%;
         height: 100%;
@@ -2177,6 +2175,10 @@
 
     #daily .daily-content {
         width: 100%;
+    }
+
+    #news .news-title h2 {
+        font-size: 1.5em;
     }
 
     #news .news-contents {
@@ -2227,6 +2229,10 @@
         font-size: 1em;
         line-height: 25px;
         margin-bottom: 10px;
+    }
+
+    #sns .sns-title h2 {
+        font-size: 1.5em;
     }
 
     #sns .sns-contents {
