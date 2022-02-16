@@ -247,6 +247,7 @@
     color: #fff;
     letter-spacing: -0.5px;
     line-height: 25px;
+    text-align: justify;
 }
 
 #program .content-detail p:nth-child(3) {
@@ -386,6 +387,7 @@
     font-weight: 600;
     color: #fff;
     text-align: center;
+    margin-bottom: 35px;
 }
 
 #academy .academy-content p:nth-child(2) {
@@ -506,10 +508,10 @@
 
 #daily .daily-content .content-text {
     position: relative;
-    top: 53%;
+    top: 56%;
     z-index: 5;
     display: none;
-    text-align: left;
+    text-align: justify;
     width: 85%;
     margin: 0 auto;
 }
@@ -517,13 +519,16 @@
 #daily .daily-content .content-text > p {
     font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
     color: #fff;
-    font-size: 1.2em;
-    line-height: 22px;
+    font-size: 1.7em;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
 }
 
 #daily .daily-content .content-text > p:nth-child(2n-1) {
-    font-size: 0.8em;
+    font-size: 1.3em;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 #daily .daily-contents .content1 {
@@ -1389,7 +1394,7 @@
 
     #program .program-menu select {
         width: 80%;
-        font-size: 0.9em;
+        font-size: 1.1em;
         padding: 10px 10px;
     }
 
@@ -1564,10 +1569,10 @@
     #daily .daily-content {
         width: 100%;
     }
-
-    /* #daily .daily-content .content-text {
+    
+    #daily .daily-content .content-text {
         display: block;
-    } */
+    }
 
     #news .news-title h2 {
         font-size: 2em;
@@ -1631,6 +1636,10 @@
     }
 
     #sns .sns-contents {
+        width: 100%;
+    }
+
+    #sns .sns-content figure img {
         width: 100%;
     }
 
@@ -1704,17 +1713,17 @@
     }
 
     #program .program-title h2 {
-        font-size: 1.5em;
-    }
-
-    #program .program-menu select {
-        width: 80%;
-        font-size: 0.9em;
-        padding: 10px 10px;
+        font-size: 2em;
     }
     
     #program {
         width: 100%;
+    }
+
+    #program .program-menu select {
+        width: 80%;
+        font-size: 1.1em;
+        padding: 10px 10px;
     }
     
     #program .program-contents {
@@ -1751,7 +1760,7 @@
         display: block;
         position: static;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     #program .content-detail-director::after {
@@ -1772,9 +1781,8 @@
 
     #program .content-detail-title span:nth-child(1) {
         font-size: 1.8em;
-        letter-spacing: -2px;
         display: block;
-        margin-bottom: 3px;
+        margin-bottom: 0px;
     }
     
     #program .content-detail-title span:nth-child(2) {
@@ -1784,13 +1792,22 @@
     #program .content-detail p {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 0.9em;
+        font-size: 0.95em;
         color: #000;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        text-align: justify;
+    }
+
+    #program .more {
+        position: relative;
+        border: 1px solid #000;
+        width: 200px;
+        padding: 20px;
+        margin: 30px auto;
     }
 
     #pitch .pitch-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #pitch .pitch-contents p {
@@ -1800,11 +1817,21 @@
     }
 
     #academy .academy-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
+    }
+
+    #academy .academy-menu select {
+        width: 80%;
+        font-size: 1.1em;
+        padding: 10px 10px;
     }
 
     #academy .academy-contents .academy-content span {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    #academy .academy-content .academy-content-title > span:nth-child(1) {
+        font-size: 1.2em;
     }
 
     #academy .academy-content p {
@@ -1815,27 +1842,27 @@
     }
     
     #academy .academy-content p:nth-child(2) {
-        font-size: 1.8em;
+        font-size: 1.4em;
         margin-bottom: 10px;
     }
     
     #academy .academy-content p:nth-child(3) {
-        font-size: 1.5em;
+        font-size: 1.8em;
         margin-bottom: 20px;
     }
     
     #academy .academy-content p:nth-child(4) {
-        font-size: 1.4em;
-        line-height: 35px;
+        font-size: 1.2em;
+        line-height: 30px;
         margin-bottom: 30px;
     }
 
     #academy .academy-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #daily .daily-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #daily .daily-contents {
@@ -1849,7 +1876,7 @@
     }
 
     #news .news-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #news .news-contents {
@@ -1906,16 +1933,20 @@
         width: 100%;
     }
 
+    #sns .sns-content figure img {
+        width: 100%;
+    }
+
     #sns .sns-content:last-child {
         margin-bottom: 0;
     }
 
     #sns .sns-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #newsletter .newsletter-title h2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #newsletter .newsletter-contents .newsletter-input {
@@ -1944,26 +1975,34 @@
     #market .market-text {
         display: none;
     }
+
+    .btn {
+        width: 100%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10;
+    }
 }
 
 @media all and (max-width: 320px) {
     #main .main-contents {
-        padding: 6% 15%;
+        padding: 7% 20%;
     }
 
     #main .main-contents p:nth-child(1) {
         font-size: 3vw;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     #main .main-contents p:nth-child(2) {
         font-size: 6vw;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     #main .main-contents p:nth-child(3) {
         font-size: 5vw;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     #main .main-contents p:nth-child(9) {
@@ -1980,7 +2019,7 @@
     }
 
     #program .program-menu select {
-        width: 100%;
+        width: 80%;
     }
 
     #program .program-contents {
@@ -2055,9 +2094,24 @@
         margin-bottom: 30px;
     }
 
+    #program .more {
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #program .more figure {
+        display: none;
+    }
+
+    #pitch .pitch-title h2 {
+        font-size: 1.5em;
+    }
+
     #pitch .pitch-contents p {
-        font-size: 1.4em;
-        line-height: 35px;
+        font-size: 1em;
+        line-height: 25px;
+        padding: 0 25px;
     }
 
     #academy .academy-title h2 {
@@ -2065,34 +2119,53 @@
     }
 
     #academy .academy-menu select {
-        width: 100%;
+        width: 80%;
     }
 
     #academy .academy-contents .academy-content span {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     #academy .academy-content p {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
+        font-size: 1em;
         color: #fff;
         text-align: center;
     }
-    
+
+    #academy .academy-content .academy-content-title > span:nth-child(1) {
+        font-size: 1em;
+    }
+
     #academy .academy-content p:nth-child(2) {
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin-bottom: 10px;
     }
     
     #academy .academy-content p:nth-child(3) {
-        font-size: 1.5em;
+        font-size: 1.8em;
         margin-bottom: 20px;
     }
     
     #academy .academy-content p:nth-child(4) {
-        font-size: 1.4em;
-        line-height: 35px;
+        font-size: 1em;
+        line-height: 30px;
         margin-bottom: 30px;
+    }
+
+    #academy .academy-content .more {
+        width: 100px;
+        text-align: center;
+        margin: 35px auto;
+    }
+
+    #academy .academy-content .more > span {
+        font-size: 1em;
+    }
+
+    #academy .more figure {
+        display: none;
     }
 
     #daily .daily-contents {
@@ -2115,6 +2188,7 @@
     #news .news-content {
         width: 100%;
         flex: 1;
+        padding: 0;
     }
 
     #news .news-content::before {
@@ -2158,6 +2232,10 @@
         width: 100%;
     }
 
+    #sns .sns-content figure img {
+        width: 100%;
+    }
+
     #sns .sns-content:last-child {
         margin-bottom: 0;
     }
@@ -2191,5 +2269,13 @@
 
     #market .market-text {
         display: none;
+    }
+
+    .btn {
+        width: 100%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10;
     }
 }

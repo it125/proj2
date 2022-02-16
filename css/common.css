@@ -1298,7 +1298,7 @@ table {
     }
     
     #header .logo img {
-        width: 200px;
+        width: 150px;
     }
     
     #header nav {
@@ -1352,7 +1352,7 @@ table {
     
     #header .search {
         position: absolute;
-        top: 30px;
+        top: 20px;
         left: 10px;
     }
     
@@ -1373,7 +1373,7 @@ table {
 
     #header .hamburger {
         position: absolute;
-        top: 30px;
+        top: 20px;
         right: 10px;
         display: block;
     }
