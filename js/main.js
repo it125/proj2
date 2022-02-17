@@ -248,4 +248,20 @@ $(function(){
     });
 });
 
+$(window).resize(function() {
+    var width = $(window).width();
+
+    if(width > 1023) {
+        $('.close').hide();
+        $('.hamburger').show();
+        $('.h-contents').show();
+        $('.m-header').hide();
+        $('.m-gnb').hide();
+        $('.m-lnb').hide();
+        $('.search').show();
+        $('main').show();
+        $('#footer').show();
+        $('.btn').show();
+    }
+});
 
