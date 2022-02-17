@@ -174,7 +174,29 @@ $('.top').click(function () {
 
 $('.ticket').click(function() {
     alert('예매 기간이 아닙니다.');
-})
+});
 
 // hamburger 활성화
-
+$(function(){
+    $('.hamburger').on("click",function(e){
+        e.preventDefault();
+        if($(this).is(":visible")) {
+            $('.hamburger').hide();
+            $('.close').show();
+            $('.h-contents').hide();
+            $('.m-header').show();
+            $('.search').hide();
+        }
+    });
+    $('.close').on("click",function(e){
+        e.preventDefault();
+        if($(this).is(":visible")) {
+            $('.close').hide();
+            $('.hamburger').show();
+            $('.h-contents').show();
+            $('.m-header').hide();
+            $('.search').show();
+            
+        }
+    });
+});

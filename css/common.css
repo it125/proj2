@@ -230,6 +230,54 @@ table {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
 }
 
+#header .m-header {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 25px;
+}
+
+#header .m-header h1 {
+    position: relative;
+    top: -10px;
+    left: 55px;
+}
+
+#header .m-header h1 img {
+    width: 180px;
+}
+
+#header .m-menu {
+    position: absolute;
+    top: 0;
+    right: 55px;
+}
+
+#header .m-menu ul img {
+    width: 30px;
+}
+
+#header .m-menu ul {
+}
+
+#header .m-menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+#header .m-menu ul li a {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+}
+
+#header nav .m-gnb {
+    display: block;
+}
+
+#header nav .m-lnb {
+    display: block;
+}
+
 #header .search {
     position: absolute;
     top: 118px;
@@ -720,18 +768,14 @@ table {
     }
     
     #header nav {
-        display: none;
         position: relative;
         text-align: center;
         margin-bottom: 30px;
     }
     
-    #header nav .gnb {
+    #header nav > .gnb {
+        display: none;
         width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
     }
     
     #header nav .gnb > li {
