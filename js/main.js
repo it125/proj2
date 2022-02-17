@@ -176,7 +176,44 @@ $('.ticket').click(function() {
     alert('예매 기간이 아닙니다.');
 });
 
-// hamburger 활성화
+// hamburger 
+// $(function(){
+//     var width = $(window).width();
+//     if(width < 1023) {
+//         $('.hamburger').on("click",function(e){
+//             e.preventDefault();
+//             if($(this).is(":visible")) {
+//                 $('.hamburger').hide();
+//                 $('.close').show();
+//                 $('.h-contents').hide();
+//                 $('.m-header').show();
+//                 $('.m-gnb').show();
+//                 $('.m-lnb').show();
+//                 $('.search').hide();
+//                 $('main').hide();
+//                 $('#footer').hide();
+//                 $('.btn').hide();
+//             }
+//         });
+    
+//         $('.close').on("click",function(e){
+//             e.preventDefault();
+//             if($(this).is(":visible")) {
+//                 $('.close').hide();
+//                 $('.hamburger').show();
+//                 $('.h-contents').show();
+//                 $('.m-header').hide();
+//                 $('.m-gnb').hide();
+//                 $('.m-lnb').hide();
+//                 $('.search').show();
+//                 $('main').show();
+//                 $('#footer').show();
+//                 $('.btn').show();
+//             }
+//         });
+//     }
+// });
+
 $(function(){
     $('.hamburger').on("click",function(e){
         e.preventDefault();
@@ -193,6 +230,7 @@ $(function(){
             $('.btn').hide();
         }
     });
+
     $('.close').on("click",function(e){
         e.preventDefault();
         if($(this).is(":visible")) {
@@ -201,12 +239,13 @@ $(function(){
             $('.h-contents').show();
             $('.m-header').hide();
             $('.m-gnb').hide();
-            $('.m-lnb').show();
+            $('.m-lnb').hide();
             $('.search').show();
             $('main').show();
             $('#footer').show();
             $('.btn').show();
-            
         }
     });
 });
+
+
