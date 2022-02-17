@@ -185,7 +185,12 @@ $(function(){
             $('.close').show();
             $('.h-contents').hide();
             $('.m-header').show();
+            $('.m-gnb').show();
+            $('.m-lnb').show();
             $('.search').hide();
+            $('main').hide();
+            $('#footer').hide();
+            $('.btn').hide();
         }
     });
     $('.close').on("click",function(e){
@@ -195,7 +200,12 @@ $(function(){
             $('.hamburger').show();
             $('.h-contents').show();
             $('.m-header').hide();
+            $('.m-gnb').hide();
+            $('.m-lnb').show();
             $('.search').show();
+            $('main').show();
+            $('#footer').show();
+            $('.btn').show();
             
         }
     });

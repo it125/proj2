@@ -257,9 +257,6 @@ table {
     width: 30px;
 }
 
-#header .m-menu ul {
-}
-
 #header .m-menu ul li {
     display: inline-block;
     vertical-align: middle;
@@ -268,14 +265,94 @@ table {
 
 #header .m-menu ul li a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 0.9em;
 }
 
 #header nav .m-gnb {
-    display: block;
+    position: relative;
+    top: 100px;
+    display: none;
+    width: 30%;
+    text-align: center;
+}
+
+#header nav .m-gnb li {
+    height: 100%;
+    background: #fff;
+    padding: 20px 10px;
+}
+
+#header nav .m-gnb a {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 1.2em;
+    padding: inherit;
+
 }
 
 #header nav .m-lnb {
-    display: block;
+    background: url('../images/poster_o.png') no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 750px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    vertical-align: middle;
+    padding: 30px 0;
+    display: none;
+}
+
+#header nav .m-lnb li {
+    margin-bottom: 15px;
+}
+
+#header nav .m-lnb1 {
+    display: none;
+}
+
+#header nav .m-lnb2 {
+    display: none;
+}
+
+#header nav .m-lnb3 {
+    display: none;
+}
+
+#header nav .m-lnb4 {
+    display: none;
+}
+
+#header nav .m-lnb5 {
+    display: none;
+}
+
+#header nav .m-lnb6 {
+    display: none;
+}
+
+#header nav .m-lnb7 {
+    display: none;
+}
+
+#header nav .m-lnb8 {
+    display: none;
+}
+
+#header nav .m-lnb9 {
+    display: none;
+}
+
+#header nav .m-gnb li:hover {
+    background: #000;
+}
+
+#header nav .m-gnb li:hover a {
+    color: #fff;
+}
+
+#header nav .m-lnb a {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    font-size: 1.1em;
 }
 
 #header .search {
@@ -767,49 +844,15 @@ table {
         width: 200px;
     }
     
-    #header nav {
-        position: relative;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    
     #header nav > .gnb {
         display: none;
         width: 100%;
-    }
-    
-    #header nav .gnb > li {
-        position: relative;
-        width: 100%;
-        vertical-align: top;
-    }
-    
-    #header nav .gnb > li > a {
-        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 1.1em;
-    }
-    
-    #header nav .gnb:hover .lnb {
-        display: block;
-        animation: fade 0.3s ease-in;
-    }
-    
-    #header nav .gnb > li:hover > a {
-        font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
     #header nav .lnb {
         width: 100%;
         margin-top: 30px;
         display: none;
-    }
-    
-    #header nav .lnb > li {
-        margin-bottom: 15px;
-    }
-    
-    #header nav .lnb > li > a {
-        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     }
     
     #header .search {
