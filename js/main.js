@@ -214,45 +214,22 @@ $('.ticket').click(function() {
 //     }
 // });
 
-$(function(){
-    $('.hamburger').on("click",function(e){
-        e.preventDefault();
-        if($(this).is(":visible")) {
-            $('.hamburger').hide();
-            $('.close').show();
-            $('.h-contents').hide();
-            $('.m-header').show();
-            $('.m-gnb').show();
-            $('.m-lnb').show();
-            $('.search').hide();
-            $('main').hide();
-            $('#footer').hide();
-            $('.btn').hide();
-        }
-    });
 
-    $('.close').on("click",function(e){
-        e.preventDefault();
-        if($(this).is(":visible")) {
-            $('.close').hide();
-            $('.hamburger').show();
-            $('.h-contents').show();
-            $('.m-header').hide();
-            $('.m-gnb').hide();
-            $('.m-lnb').hide();
-            $('.search').show();
-            $('main').show();
-            $('#footer').show();
-            $('.btn').show();
-        }
-    });
-});
+// $(window).resize(function() {
+//     var width = $(window).width();
 
-$(window).resize(function() {
-    var width = $(window).width();
-
-    if(width > 1023) {
+//     if(width > 1023) {
         
-    }
-});
+//     }
+// });
 
+$(function () {
+    $('.hamburger').on("click", function (e) {
+        e.preventDefault();
+        if($('.hamburger img').attr("src", "./images/hamburger.png")) {
+            $('.hamburger img').attr("src", "./images/close.png");
+        } else {
+            $('.hamburger img').attr("src", "./images/hamburger.png");
+        }
+    });
+});
