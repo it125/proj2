@@ -229,7 +229,7 @@ table {
 #header nav .lnb > li > a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
 }
-/* 
+
 #header .m-header {
     width: 100%;
     display: none;
@@ -355,7 +355,7 @@ table {
 #header nav .m-lnb a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-size: 1.1em;
-} */
+}
 
 #header .search {
     position: absolute;
@@ -385,7 +385,7 @@ table {
     width: 28px;
 }
 
-/* #header .close {
+#header .close {
     display: none;
     position: absolute;
     top: 29px;
@@ -394,7 +394,7 @@ table {
 
 #header .close img {
     width: 25px;
-} */
+}
 
 /* footer */
 #footer {
