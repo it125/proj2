@@ -634,9 +634,6 @@ table {
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
-    
-    /* footer */
-    
 }
 
 @media all and (min-width:1024px) and (max-width: 1439px) {
@@ -1019,45 +1016,6 @@ table {
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
-    }
-
-    #header .m-header {
-        width: 100%;
-        height: 100%;
-        display: none;
-        position: absolute;
-        top: 25px;
-    }
-    
-    #header .m-header h1 {
-        position: relative;
-        top: -10px;
-        left: 50px;
-    }
-    
-    #header .m-header h1 img {
-        width: 180px;
-    }
-    
-    #header .m-login {
-        position: absolute;
-        top: 60px;
-        left: 50px;
-    }
-    
-    #header .m-login ul img {
-        width: 30px;
-    }
-    
-    #header .m-login ul li {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 20px;
-    }
-    
-    #header .m-login ul li a {
-        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 0.9em;
     }
 
     /* footer */
@@ -1553,133 +1511,6 @@ table {
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
-
-    #header .m-header {
-        width: 100%;
-        display: none;
-        position: absolute;
-        top: 25px;
-    }
-    
-    #header .m-header h1 {
-        position: relative;
-        top: -10px;
-        left: 10px;
-    }
-    
-    #header .m-header h1 img {
-        width: 95px;
-    }
-    
-    #header .m-login {
-        width: 100%;
-        position: absolute;
-        top: 50px;
-        left: 10px;
-    }
-    
-    #header .m-login ul img {
-        width: 25px;
-    }
-    
-    #header .m-login ul li {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 15px;
-    }
-    
-    #header .m-login ul li a {
-        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 0.8em;
-    }
-    
-    #header nav .m-gnb {
-        position: relative;
-        top: 100px;
-        display: none;
-        width: 30%;
-        text-align: center;
-        border-top: 1.5px solid #eee;
-    }
-    
-    #header nav .m-gnb li {
-        height: 100%;
-        background: #fff;
-        padding: 20px 20px;
-    }
-    
-    #header nav .m-gnb a {
-        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 1.2em;
-        padding: inherit;
-    }
-    
-    #header nav .m-lnb {
-        background: url('../images/poster_o.png') no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 750px;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        vertical-align: middle;
-        padding: 30px 0;
-        border-top: 1.5px solid #eee;
-        display: none;
-    }
-    
-    #header nav .m-lnb li {
-        margin-bottom: 15px;
-    }
-    
-    #header nav .m-lnb1 {
-        display: none;
-    }
-    
-    #header nav .m-lnb2 {
-        display: none;
-    }
-    
-    #header nav .m-lnb3 {
-        display: none;
-    }
-    
-    #header nav .m-lnb4 {
-        display: none;
-    }
-    
-    #header nav .m-lnb5 {
-        display: none;
-    }
-    
-    #header nav .m-lnb6 {
-        display: none;
-    }
-    
-    #header nav .m-lnb7 {
-        display: none;
-    }
-    
-    #header nav .m-lnb8 {
-        display: none;
-    }
-    
-    #header nav .m-lnb9 {
-        display: none;
-    }
-    
-    #header nav .m-gnb li:hover {
-        background: #000;
-    }
-    
-    #header nav .m-gnb li:hover a {
-        color: #fff;
-    }
-    
-    #header nav .m-lnb a {
-        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 1.2em;
-    }
     
     /* footer */
     #footer {
@@ -1706,10 +1537,6 @@ table {
         border-bottom: 1px solid #eee;
         text-align: center;
         padding: 15px 0;
-    }
-    
-    #footer .f-info ul {
-        
     }
     
     #footer .f-info ul li {

@@ -212,7 +212,7 @@ $('.close').on("click", function (e) {
 $(window).resize(function () {
     var width = $(window).width();
 
-    if (width > 1023) {
+    if (width > 1024) {
         $('.close').hide();
         $('.hamburger').hide();
         $('.h-contents').show();
