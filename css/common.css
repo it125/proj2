@@ -64,9 +64,6 @@ table {
 }
 
 /* font */
-@import url('http://fonts.cdnfonts.com/css/gloss-and-bloom');
-/* font-family: 'Gloss And Bloom', sans-serif; */
-
 @font-face {
     font-family: 'SpoqaHanSansNeo-Regular';
     src: url('../fonts/SpoqaHanSansNeo-Regular.eot') format('eot');
