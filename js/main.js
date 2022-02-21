@@ -176,60 +176,42 @@ $('.ticket').click(function() {
     alert('예매 기간이 아닙니다.');
 });
 
-// hamburger 
-// $(function(){
-//     var width = $(window).width();
-//     if(width < 1023) {
-//         $('.hamburger').on("click",function(e){
-//             e.preventDefault();
-//             if($(this).is(":visible")) {
-//                 $('.hamburger').hide();
-//                 $('.close').show();
-//                 $('.h-contents').hide();
-//                 $('.m-header').show();
-//                 $('.m-gnb').show();
-//                 $('.m-lnb').show();
-//                 $('.search').hide();
-//                 $('main').hide();
-//                 $('#footer').hide();
-//                 $('.btn').hide();
-//             }
-//         });
+// 모바일 gnb
+$(window).resize(function() {
+    var width = $(window).width();
+
+    if(width > 1023) {
+        $('.hamburger').on("click",function(e){
+            e.preventDefault();
+            if($(this).is(":visible")) {
+                $('.hamburger').hide();
+                $('.close').show();
+                $('.h-contents').hide();
+                $('.m-header').show();
+                $('.m-gnb').show();
+                $('.m-lnb').show();
+                $('.search').hide();
+                $('main').hide();
+                $('#footer').hide();
+                $('.btn').hide();
+            }
+        });
     
-//         $('.close').on("click",function(e){
-//             e.preventDefault();
-//             if($(this).is(":visible")) {
-//                 $('.close').hide();
-//                 $('.hamburger').show();
-//                 $('.h-contents').show();
-//                 $('.m-header').hide();
-//                 $('.m-gnb').hide();
-//                 $('.m-lnb').hide();
-//                 $('.search').show();
-//                 $('main').show();
-//                 $('#footer').show();
-//                 $('.btn').show();
-//             }
-//         });
-//     }
-// });
-
-
-// $(window).resize(function() {
-//     var width = $(window).width();
-
-//     if(width > 1023) {
-        
-//     }
-// });
-
-$(function () {
-    $('.hamburger').on("click", function (e) {
-        e.preventDefault();
-        if($('.hamburger img').attr("src", "./images/hamburger.png")) {
-            $('.hamburger img').attr("src", "./images/close.png");
-        } else {
-            $('.hamburger img').attr("src", "./images/hamburger.png");
-        }
-    });
+        $('.close').on("click",function(e){
+            e.preventDefault();
+            if($(this).is(":visible")) {
+                $('.close').hide();
+                $('.hamburger').show();
+                $('.h-contents').show();
+                $('.m-header').hide();
+                $('.m-gnb').hide();
+                $('.m-lnb').hide();
+                $('.search').show();
+                $('main').show();
+                $('#footer').show();
+                $('.btn').show();
+            }
+        });
+    }
 });
+
