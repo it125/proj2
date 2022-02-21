@@ -227,3 +227,131 @@ $(window).resize(function() {
         $('.hamburger').show();
     }
 });
+
+$(function() {
+    $('.m-gnb1').on({
+        "mouseover": function() {
+            $('.m-lnb1').show();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+    
+    $('.m-gnb2').on({
+        "mouseover": function() {
+            $('.m-lnb2').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+    
+    $('.m-gnb3').on({
+        "mouseover": function() {
+            $('.m-lnb3').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+    
+    $('.m-gnb4').on({
+        "mouseover": function() {
+            $('.m-lnb4').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+
+    $('.m-gnb5').on({
+        "mouseover": function() {
+            $('.m-lnb5').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+
+    $('.m-gnb6').on({
+        "mouseover": function() {
+            $('.m-lnb6').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+
+    $('.m-gnb7').on({
+        "mouseover": function() {
+            $('.m-lnb7').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb8').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+
+    $('.m-gnb8').on({
+        "mouseover": function() {
+            $('.m-lnb8').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb9').hide();
+        },
+    });
+
+    $('.m-gnb9').on({
+        "mouseover": function() {
+            $('.m-lnb9').show();
+            $('.m-lnb1').hide();
+            $('.m-lnb2').hide();
+            $('.m-lnb3').hide();
+            $('.m-lnb4').hide();
+            $('.m-lnb5').hide();
+            $('.m-lnb6').hide();
+            $('.m-lnb7').hide();
+            $('.m-lnb8').hide();
+        },
+    });
+});

@@ -280,14 +280,13 @@ table {
 #header nav .m-gnb li {
     height: 100%;
     background: #fff;
-    padding: 20px 10px;
+    padding: 20px 20px;
 }
 
 #header nav .m-gnb a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-size: 1.2em;
     padding: inherit;
-
 }
 
 #header nav .m-lnb {
@@ -354,7 +353,7 @@ table {
 
 #header nav .m-lnb a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #header .search {
@@ -420,10 +419,6 @@ table {
     border-bottom: 1px solid #eee;
     text-align: center;
     padding: 15px 0;
-}
-
-#footer .f-info ul {
-    
 }
 
 #footer .f-info ul li {
@@ -850,16 +845,108 @@ table {
     }
     
     #header nav > .gnb {
-        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
         width: 100%;
+        display: none;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    /*
+    #header nav .gnb > li > a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.2em;
+    }
+    
+    #header nav > .gnb > li:hover > a {
+        font-weight: 600;
+    }
+
+    #header nav .gnb::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        border-top: 2px solid #eee;
+        position: absolute;
+        left: -30px;
+    }
+
+    #header nav > .gnb > li {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 60px;
     }
     
     #header nav .lnb {
+        position: absolute;
+        top: 0;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 0px;
         display: none;
+        text-align: center;
     }
-    
+
+    #header nav .lnb > li > a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1em;
+    }
+
+    #header nav .lnb > li:hover  {
+        font-weight: 600;
+    }
+
+    #header nav > .gnb > li:hover .lnb1 {
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb2 {
+        top: -60px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb3 {
+        top: -120px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb3 {
+        top: -120px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb4 {
+        top: -180px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb5 {
+        top: -240px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb6 {
+        top: -300px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb7 {
+        top: -360px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb8 {
+        top: -420px;
+        display: inline-block;
+    }
+
+    #header nav > .gnb > li:hover .lnb9 {
+        top: -480px;
+        display: inline-block;
+    } */
+
     #header .search {
         position: absolute;
         top: 30px;
@@ -1031,6 +1118,79 @@ table {
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    }
+
+    #header .m-header {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 28px;
+    }
+    
+    #header .m-header h1 {
+        position: relative;
+        top: -10px;
+        left: 55px;
+    }
+    
+    #header .m-header h1 img {
+        width: 150px;
+    }
+    
+    #header .m-login {
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+    
+    #header .m-login ul img {
+        width: 20px;
+    }
+    
+    #header .m-login ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    #header .m-login ul li a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 0.7em;
+    }
+    
+    #header nav .m-gnb {
+        position: relative;
+        top: 100px;
+        display: none;
+        width: 30%;
+        text-align: center;
+        border-top: 1.5px solid #eee;
+    }
+    
+    #header nav .m-gnb li {
+        height: 100%;
+        background: #fff;
+        padding: 20px 20px;
+    }
+    
+    #header nav .m-gnb a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.2em;
+        padding: inherit;
+    }
+    
+    #header nav .m-lnb {
+        background: url('../images/poster_o.png') no-repeat;
+        background-size: cover;
+        width: 70%;
+        height: 750px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        vertical-align: middle;
+        padding: 30px 0;
+        border-top: 1.5px solid #eee;
+        display: none;
     }
     
     /* footer */
@@ -1260,12 +1420,92 @@ table {
         display: block;
     }
 
+    #header .close {
+        display: none;
+        position: absolute;
+        top: 15px;
+        right: 3%;
+    }
+
     #header .hamburger img {
         width: 27px;
     }
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    }
+
+    #header .m-header {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 28px;
+    }
+    
+    #header .m-header h1 {
+        position: relative;
+        top: -20px;
+        left: 25px;
+    }
+    
+    #header .m-header h1 img {
+        width: 130px;
+    }
+    
+    #header .m-login {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    
+    #header .m-login ul img {
+        width: 20px;
+    }
+    
+    #header .m-login ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    #header .m-login ul li a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 0.7em;
+    }
+    
+    #header nav .m-gnb {
+        position: relative;
+        top: 100px;
+        display: none;
+        width: 30%;
+        text-align: center;
+        border-top: 1.5px solid #eee;
+    }
+    
+    #header nav .m-gnb li {
+        height: 100%;
+        background: #fff;
+        padding: 20px 20px;
+    }
+    
+    #header nav .m-gnb a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.2em;
+        padding: inherit;
+    }
+    
+    #header nav .m-lnb {
+        background: url('../images/poster_o.png') no-repeat;
+        background-size: cover;
+        width: 70%;
+        height: 750px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        vertical-align: middle;
+        padding: 30px 0;
+        border-top: 1.5px solid #eee;
+        display: none;
     }
     
     /* footer */
