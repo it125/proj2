@@ -308,10 +308,6 @@ table {
     margin-bottom: 15px;
 }
 
-#header .m-menu .m-gnb1:hover + .m-lnb {
-    display: block;
-}
-
 #header nav .m-lnb1 {
     display: none;
 }
