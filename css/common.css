@@ -1547,6 +1547,21 @@ table {
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
+
+    #header .m-header h1 {
+        left: 30px;
+        top: -15px;
+    }
+
+    #header .m-header h1 img {
+        width: 150px;
+    }
+
+    #header .m-login {
+        width: 100%;
+        top: 60px;
+        left: 35px;
+    }
     
     /* footer */
     #footer {
