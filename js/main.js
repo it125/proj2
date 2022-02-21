@@ -177,7 +177,6 @@ $('.ticket').click(function () {
 });
 
 // 모바일 메뉴
-
 $('.hamburger').on("click", function (e) {
     e.preventDefault();
     if ($(this).is(":visible")) {
@@ -210,19 +209,21 @@ $('.close').on("click", function (e) {
     }
 });
 
-// $(function() {
-//     var width = $(window).width();
-//     if(width > 1023) {
-//         $('.close').hide();
-//         $('.hamburger').show();
-//         $('.h-contents').show();
-//         $('.m-header').hide();
-//         $('.m-gnb').hide();
-//         $('.m-lnb').hide();
-//         $('.search').show();
-//         $('main').show();
-//         $('#footer').show();
-//         $('.btn').show();
-//     }
-// });
+$(window).resize(function() {
+    var width = $(window).width();
 
+    if(width > 1023) {
+        $('.close').hide();
+        $('.hamburger').hide();
+        $('.h-contents').show();
+        $('.m-header').hide();
+        $('.m-gnb').hide();
+        $('.m-lnb').hide();
+        $('.search').show();
+        $('main').show();
+        $('#footer').show();
+        $('.btn').show();
+    } else {
+        $('.hamburger').show();
+    }
+});
