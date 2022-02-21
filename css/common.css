@@ -1022,6 +1022,7 @@ table {
     }
     
     #header .m-header h1 {
+        
     }
 
     #header .m-header h1 img {
@@ -1031,7 +1032,7 @@ table {
     #header .m-login {
         width: 100%;
         top: 80px;
-        left: 25px;
+        left: 53px;
     }
 
     #header .m-menu {
@@ -1281,8 +1282,7 @@ table {
     }
     
     #header .m-header h1 {
-        margin-left: 20px;
-        position: relative;
+        left: 30px;
         top: -15px;
     }
 
@@ -1293,7 +1293,7 @@ table {
     #header .m-login {
         width: 100%;
         top: 60px;
-        left: 25px;
+        left: 35px;
     }
 
     /* footer */
