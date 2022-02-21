@@ -1,24 +1,24 @@
 $('#program .plus').mouseover(function () {
-    $(this).css({'animation': 'rotate1 0.5s ease-in-out'});
+    $(this).css({ 'animation': 'rotate1 0.5s ease-in-out' });
 });
 
 $('#program .plus').mouseout(function () {
-    $(this).css({'animation': 'rotate2 0.5s ease-in-out'});
+    $(this).css({ 'animation': 'rotate2 0.5s ease-in-out' });
 });
 
 $('#program .more').on({
     "mouseover": function () {
         $(this)
-            .css({'background': '#000'})
-            .css({'color': '#fff'})
-            .css({'transition': 'all 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'background': '#000' })
+            .css({ 'color': '#fff' })
+            .css({ 'transition': 'all 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
         $('#program .more figure img').attr("src", "./images/more_white.png")
     },
     "mouseout": function () {
         $(this)
-            .css({'background': 'none'})
-            .css({'color': '#000'});
+            .css({ 'background': 'none' })
+            .css({ 'color': '#000' });
         $('#program .more figure img').attr("src", "./images/more_black.png")
     }
 });
@@ -26,15 +26,15 @@ $('#program .more').on({
 $('#academy .more').on({
     "mouseover": function () {
         $(this)
-            .css({'background': '#fff'})
-            .css({'transition': 'all 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
-        $('#academy .more > span').css({'color': '#000'});
+            .css({ 'background': '#fff' })
+            .css({ 'transition': 'all 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
+        $('#academy .more > span').css({ 'color': '#000' });
         $('#academy .more figure img').attr("src", "./images/more_black.png")
     },
     "mouseout": function () {
-        $(this).css({'background': 'none'});
-        $('#academy .more > span').css({'color': '#fff'});
+        $(this).css({ 'background': 'none' });
+        $('#academy .more > span').css({ 'color': '#fff' });
         $('#academy .more figure img').attr("src", "./images/more_white.png")
     }
 });
@@ -42,20 +42,20 @@ $('#academy .more').on({
 $('.daily-content').on({
     "mouseover": function () {
         var width = $(window).width();
-        if(width > 1023) {
+        if (width > 1023) {
             $(this)
-            .css({'flex': '7'})
-            .css({'transition': 'all 1s ease-in-out'})
-            .css({'cursor': 'pointer'});
+                .css({ 'flex': '7' })
+                .css({ 'transition': 'all 1s ease-in-out' })
+                .css({ 'cursor': 'pointer' });
         }
     },
     "mouseout": function () {
         var width = $(window).width();
-        if(width > 1023) {
+        if (width > 1023) {
             $(this)
-                .css({'flex': '1'})
-                .css({'transition': 'all 1s ease-in-out'})
-                .css({'cursor': 'pointer'});
+                .css({ 'flex': '1' })
+                .css({ 'transition': 'all 1s ease-in-out' })
+                .css({ 'cursor': 'pointer' });
         }
     }
 });
@@ -63,81 +63,81 @@ $('.daily-content').on({
 $('.news-content:nth-child(1) p').on({
     "mouseover": function () {
         $(this)
-            .css({'color': '#999'})
-            .css({'transition': 'all 0.3s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'color': '#999' })
+            .css({ 'transition': 'all 0.3s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     },
     "mouseout": function () {
         $(this)
-            .css({'color': '#000'})
-            .css({'cursor': 'auto'});
+            .css({ 'color': '#000' })
+            .css({ 'cursor': 'auto' });
     }
 });
 
 $('.news-content:nth-child(2) p').on({
     "mouseover": function () {
         $(this)
-            .css({'color': '#999'})
-            .css({'transition': 'all 0.3s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'color': '#999' })
+            .css({ 'transition': 'all 0.3s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     },
     "mouseout": function () {
         $(this)
-            .css({'color': '#000'})
-            .css({'cursor': 'auto'});
+            .css({ 'color': '#000' })
+            .css({ 'cursor': 'auto' });
     }
 });
 
 $('.news-content:nth-child(3) p').on({
     "mouseover": function () {
         $(this)
-            .css({'color': '#999'})
-            .css({'transition': 'all 0.3s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'color': '#999' })
+            .css({ 'transition': 'all 0.3s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     },
     "mouseout": function () {
         $(this)
-            .css({'color': '#000'})
-            .css({'cursor': 'auto'});
+            .css({ 'color': '#000' })
+            .css({ 'cursor': 'auto' });
     }
 });
 
 $('.news-content:nth-child(1) figure').on({
     "mouseover": function () {
         $(this)
-            .css({'animation': 'rotate1 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'animation': 'rotate1 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     },
     "mouseout": function () {
         $(this)
-            .css({'animation': 'rotate2 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'animation': 'rotate2 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     }
 });
 
 $('.news-content:nth-child(2) figure').on({
     "mouseover": function () {
         $(this)
-            .css({'animation': 'rotate1 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'animation': 'rotate1 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     },
     "mouseout": function () {
         $(this)
-            .css({'animation': 'rotate2 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'animation': 'rotate2 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     }
 });
 
 $('.news-content:nth-child(3) figure').on({
     "mouseover": function () {
         $(this)
-            .css({'animation': 'rotate1 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'animation': 'rotate1 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     },
     "mouseout": function () {
         $(this)
-            .css({'animation': 'rotate2 0.5s ease-in-out'})
-            .css({'cursor': 'pointer'});
+            .css({ 'animation': 'rotate2 0.5s ease-in-out' })
+            .css({ 'cursor': 'pointer' });
     }
 });
 
@@ -172,15 +172,15 @@ $('.top').click(function () {
     }, 1000);
 });
 
-$('.ticket').click(function() {
+$('.ticket').click(function () {
     alert('예매 기간이 아닙니다.');
 });
 
 // 모바일 메뉴
 
-$('.hamburger').on("click",function(e){
+$('.hamburger').on("click", function (e) {
     e.preventDefault();
-    if($(this).is(":visible")) {
+    if ($(this).is(":visible")) {
         $('.hamburger').hide();
         $('.close').show();
         $('.h-contents').hide();
@@ -194,9 +194,9 @@ $('.hamburger').on("click",function(e){
     }
 });
 
-$('.close').on("click",function(e){
+$('.close').on("click", function (e) {
     e.preventDefault();
-    if($(this).is(":visible")) {
+    if ($(this).is(":visible")) {
         $('.close').hide();
         $('.hamburger').show();
         $('.h-contents').show();
