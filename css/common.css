@@ -247,23 +247,23 @@ table {
     width: 180px;
 }
 
-#header .m-menu {
+#header .m-login {
     position: absolute;
     top: 0;
     right: 55px;
 }
 
-#header .m-menu ul img {
+#header .m-login ul img {
     width: 30px;
 }
 
-#header .m-menu ul li {
+#header .m-login ul li {
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
 }
 
-#header .m-menu ul li a {
+#header .m-login ul li a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-size: 0.9em;
 }
@@ -300,12 +300,16 @@ table {
     right: 0;
     vertical-align: middle;
     padding: 30px 0;
-    display: none;
     border-top: 1.5px solid #eee;
+    display: none;
 }
 
 #header nav .m-lnb li {
     margin-bottom: 15px;
+}
+
+#header .m-menu .m-gnb1:hover + .m-lnb {
+    display: block;
 }
 
 #header nav .m-lnb1 {
