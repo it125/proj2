@@ -259,6 +259,8 @@
     position: absolute;
     bottom: 10%;
     right: 8%;
+    cursor: pointer;
+    z-index: 10;
 }
 
 #program .plus img {

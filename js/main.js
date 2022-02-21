@@ -1,9 +1,10 @@
-$('#program .plus').mouseover(function () {
-    $(this).css({ 'animation': 'rotate1 0.5s ease-in-out' });
-});
-
-$('#program .plus').mouseout(function () {
-    $(this).css({ 'animation': 'rotate2 0.5s ease-in-out' });
+$('.plus').on({
+    "mouseover": function () {
+        $(this).css({ 'animation': 'rotate1 0.5s ease-in-out' })
+    },
+    "mouseout": function () {
+        $(this).css({ 'animation': 'rotate2 0.5s ease-in-out' });
+    }
 });
 
 $('#program .more').on({
