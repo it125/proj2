@@ -142,7 +142,7 @@ $('.news-content:nth-child(3) figure').on({
     }
 });
 
-// select 탭메뉴
+// academy영역 select 탭메뉴
 var selectTab = document.getElementById("academyTab");
 var con = document.getElementsByClassName("academy-content");
 selectTab.addEventListener("change", function () {
