@@ -332,13 +332,13 @@ table {
 
 #header .m-menu .m-gnb li {
     padding: 30px 15px;
+    cursor: pointer;
 }
 
 #header .m-menu .m-gnb a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-size: 1.15em;
     text-align: center;
-    padding: 25px 50px;
 }
 
 #header .m-menu .m-lnb {
@@ -392,6 +392,10 @@ table {
 
 #header .m-menu .m-lnb li:last-child {
     margin-bottom: 0;
+}
+
+#header .m-menu .m-lnb li:hover a {
+    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
 }
 
 #header .m-menu .m-lnb a {
