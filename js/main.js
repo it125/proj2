@@ -366,13 +366,25 @@ $(function () {
     });
 });
 
-// sns width:916px 미만일 경우에 마지막 content 제거
-$(window).resize(function () {
+// sns width:890px 미만일 경우에 마지막 content 제거
+$(window).ready(function () {
     var width = $(window).width();
 
-    if (width < 916) {
+    if (width < 890) {
         $('.sns-content:last-child').hide();
     } else {
         $('.sns-content:last-child').show();
     }
 });
+
+$(window).resize(function () {
+    var width = $(window).width();
+
+    if (width < 890) {
+        $('.sns-content:last-child').hide();
+    } else {
+        $('.sns-content:last-child').show();
+    }
+});
+
+
