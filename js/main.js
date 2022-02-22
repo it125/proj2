@@ -365,3 +365,14 @@ $(function () {
         }
     });
 });
+
+// sns width:916px 미만일 경우에 마지막 content 제거
+$(window).resize(function () {
+    var width = $(window).width();
+
+    if (width < 916) {
+        $('.sns-content:last-child').hide();
+    } else {
+        $('.sns-content:last-child').show();
+    }
+});
