@@ -207,6 +207,15 @@ $('.close').on("click", function (e) {
         $('main').show();
         $('#footer').show();
         $('.btn').show();
+        $('.m-lnb1').hide();
+        $('.m-lnb2').hide();
+        $('.m-lnb3').hide();
+        $('.m-lnb4').hide();
+        $('.m-lnb5').hide();
+        $('.m-lnb6').hide();
+        $('.m-lnb7').hide();
+        $('.m-lnb8').hide();
+        $('.m-lnb9').hide();
     }
 });
 
