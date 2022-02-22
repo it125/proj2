@@ -1,3 +1,49 @@
+// program 영역 select 탭메뉴
+// var selectTab = document.getElementById("programsTab");
+// var con = document.getElementsByClassName("program-contents");
+// selectTab.addEventListener("change", function () {
+//     var val = selectTab
+//         .options[selectTab.selectedIndex]
+//         .value;
+//     for (var i = 0; i < selectTab.length; i++) {
+//         con[i].style.display = "none";
+//         if (val == "program1") {
+//             con[0].style.display = "block";
+//             con[1].style.display = "none";
+//             con[2].style.display = "none";
+//             con[3].style.display = "none";
+//             con[4].style.display = "none";
+//             con[5].style.display = "none";
+//             con[6].style.display = "none";
+//             con[7].style.display = "none";
+//             con[8].style.display = "none";
+//             con[9].style.display = "none";
+//             con[10].style.display = "none";
+//             con[11].style.display = "none";
+//             con[12].style.display = "none";
+//             con[13].style.display = "none";
+//             con[14].style.display = "none";
+//             con[15].style.display = "none";
+//             documnet
+//                 .getElementById("select1")
+//                 .selected = true;
+//         } else if (val == "academy2") {
+//             con[1].style.display = "block";
+//             documnet
+//                 .getElementById("select2")
+//                 .selected = true;
+//         }
+//     }
+// });
+
+// 기본형 
+// const selectElement = document.querySelector('.ice-cream');
+
+// selectElement.addEventListener('change', (event) => {
+//   const result = document.querySelector('.result');
+//   result.textContent = `You like ${event.target.value}`;
+// });
+
 $('.plus').on({
     "mouseover": function () {
         $(this).css({ 'animation': 'rotate1 0.5s ease-in-out' })
