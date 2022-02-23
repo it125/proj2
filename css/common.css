@@ -65,6 +65,13 @@ table {
 
 /* font */
 @font-face {
+    font-family: 'Gloss And Bloom';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gloss And Bloom'), url('https://fonts.cdnfonts.com/s/15022/Gloss_And_Bloom.woff') format('woff');
+}
+
+@font-face {
     font-family: 'SpoqaHanSansNeo-Regular';
     src: url('../fonts/SpoqaHanSansNeo-Regular.eot') format('eot');
     src: url('../fonts/SpoqaHanSansNeo-Regular.woff') format('woff');
