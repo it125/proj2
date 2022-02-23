@@ -187,61 +187,49 @@ $('.ticket').click(function () {
 });
 
 // 모바일 메뉴
-$('.hamburger').on("click", function (e) {
-    e.preventDefault();
-    if ($(this).is(":visible")) {
-        $('.hamburger').hide();
-        $('.close').show();
-        $('.h-contents').hide();
-        $('.m-header').show();
-        $('.m-gnb').show();
-        $('.m-lnb').show();
-        $('.search').hide();
-        $('main').hide();
-        $('#footer').hide();
-        $('.btn').hide();
+$('.hamburger').on({
+    "click": function(e) {
+        e.preventDefault();
+        if($(this).is(":visible")) {
+            $('.hamburger').hide();
+            $('.h-wrap').hide();
+            $('main').hide();
+            $('footer').hide();
+            $('.btn').hide();
+            $('.m-header').show();
+            $('.close').show();
+        }
     }
 });
 
-$('.close').on("click", function (e) {
-    e.preventDefault();
-    if ($(this).is(":visible")) {
-        $('.close').hide();
-        $('.hamburger').show();
-        $('.h-contents').show();
-        $('.m-header').hide();
-        $('.m-gnb').hide();
-        $('.m-lnb').hide();
-        $('.search').show();
-        $('main').show();
-        $('#footer').show();
-        $('.btn').show();
-        $('.m-lnb1').hide();
-        $('.m-lnb2').hide();
-        $('.m-lnb3').hide();
-        $('.m-lnb4').hide();
-        $('.m-lnb5').hide();
-        $('.m-lnb6').hide();
-        $('.m-lnb7').hide();
-        $('.m-lnb8').hide();
-        $('.m-lnb9').hide();
-    } 
-}); 
+$('.close').on({
+    "click": function(e) {
+        e.preventDefault();
+        if($(this).is(":visible")) {
+            $('.hamburger').show();
+            $('.h-wrap').show();
+            $('main').show();
+            $('footer').show();
+            $('.btn').show();
+            $('.m-header').hide();
+            $('.close').hide();
+        }
+    }
+});
 
 $(window).resize(function () {
     var width = $(window).width();
 
     if (width > 1024) {
-        $('.close').hide();
         $('.hamburger').hide();
-        $('.h-contents').show();
-        $('.m-header').hide();
-        $('.m-gnb').hide();
-        $('.m-lnb').hide();
-        $('.search').show();
+        $('.h-wrap').show();
         $('main').show();
-        $('#footer').show();
+        $('footer').show();
         $('.btn').show();
+        $('.m-header').hide();
+        $('.close').hide();
+    } else {
+        $('.hamburger').show();
     }
 });
 
