@@ -194,6 +194,8 @@ $('.hamburger').on("click", function (e) {
         $('.close').show();
         $('.h-contents').hide();
         $('.m-header').show();
+        $('.m-gnb').show();
+        $('.m-lnb').show();
         $('.search').hide();
         $('main').hide();
         $('#footer').hide();
@@ -223,8 +225,8 @@ $('.close').on("click", function (e) {
         $('.m-lnb7').hide();
         $('.m-lnb8').hide();
         $('.m-lnb9').hide();
-    }
-});
+    } 
+}); 
 
 $(window).resize(function () {
     var width = $(window).width();
