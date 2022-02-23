@@ -255,158 +255,12 @@ table {
     width: 28px;
 }
 
-#header .m-header {
-    width: 100%;
-}
-
-#header .m-logo {
-    width: 100%;
-    margin-left: 60px;
-}
-
-#header .m-logo img {
-    width: 200px;
-}
-
-#header .m-login {
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
-    bottom: 45px;
-}
-
-#header .m-login ul {
-    overflow: hidden;
-    float: right;
-}
-
-#header .m-login li {
-    float: left;
-    margin-right: 15px;
-}
-
-#header .m-login li:last-child {
-    margin-right: 60px;
-}
-
-#header .m-login li a {
-    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-    font-weight: 600;
-}
-
-#header .m-ticket {
-    overflow: hidden;
-    position: relative;
-    bottom: 45px;
-}
-
-#header .m-ticket ul {
-    overflow: hidden;
-    float: right;
-}
-
-#header .m-ticket li {
-    float: left;
-    margin-right: 15px;
-}
-
-#header .m-ticket li:last-child {
-    margin-right: 60px;
-}
-
-#header .m-ticket li a {
-    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-    font-weight: 600;
-}
-
-#header .m-menu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex: 1 1 40%;
-}
-
-#header .m-menu .m-gnb {
-    flex: 0.5;
-}
-
-#header .m-menu .m-gnb li {
-    padding: 30px 15px;
-    cursor: pointer;
-}
-
-#header .m-menu .m-gnb a {
-    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-    font-size: 1.15em;
-    text-align: center;
-}
-
-#header .m-menu .m-lnb {
-    background: url('../images/poster_o.png') no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    flex: 1;
-    padding: 50px 0;
-}
-
-#header .m-menu .m-lnb1 {
+#header .close {
     display: none;
 }
 
-#header .m-menu .m-lnb2 {
-    display: none;
-}
-
-#header .m-menu .m-lnb3 {
-    display: none;
-}
-
-#header .m-menu .m-lnb4 {
-    display: none;
-}
-
-#header .m-menu .m-lnb5 {
-    display: none;
-}
-
-#header .m-menu .m-lnb6 {
-    display: none;
-}
-
-#header .m-menu .m-lnb7 {
-    display: none;
-}
-
-#header .m-menu .m-lnb8 {
-    display: none;
-}
-
-#header .m-menu .m-lnb9 {
-    display: none;
-}
-
-#header .m-menu .m-lnb li {
-    margin-bottom: 50px;
-}
-
-#header .m-menu .m-lnb li:last-child {
-    margin-bottom: 0;
-}
-
-#header .m-menu .m-lnb li:hover a {
-    font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-}
-
-#header .m-menu .m-lnb a {
-    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-    font-weight: 600;
-    font-size: 1.15em;
-    text-align: center;
-}
-
-#header .m-header {
-    width: 100%;
+#header .close img {
+    width: 27px;
 }
 
 /* footer */
@@ -846,7 +700,6 @@ table {
     
     #header .logo {
         text-align: center;
-        margin-bottom: 30px;
     }
     
     #header .logo img {
@@ -894,6 +747,134 @@ table {
     #header .hamburger img {
         width: 27px;
     }
+
+    #header .close {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        display: none;
+    }
+
+    #header .m-header {
+        width: 100%;
+        display: none;
+    }
+    
+    #header .m-logo {
+        width: 100%;
+    }
+    
+    #header .m-logo img {
+        width: 200px;
+        position: relative;
+        top: 15px;
+        left: 30px;
+    }
+    
+    #header .m-login {
+        display: none;
+    }
+    
+    #header .m-login li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    #header .m-ticket {
+        display: none;
+    }
+    
+    #header .m-ticket li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    
+    #header .m-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1 1 40%;
+        margin-top: 60px;
+    }
+    
+    #header .m-menu .m-gnb {
+        width: 100%;
+        flex: 0.5;
+    }
+    
+    #header .m-menu .m-gnb li {
+        padding: 30px 15px;
+        cursor: pointer;
+    }
+    
+    #header .m-menu .m-gnb a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-menu .m-lnb {
+        background: url('../images/poster_o.png') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        flex: 1;
+        padding: 50px 0;
+    }
+    
+    #header .m-menu .m-lnb1 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb2 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb3 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb4 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb5 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb6 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb7 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb8 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb9 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb li {
+        margin-bottom: 50px;
+    }
+    
+    #header .m-menu .m-lnb li:last-child {
+        margin-bottom: 0;
+    }
+    
+    #header .m-menu .m-lnb li:hover a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    }
+    
+    #header .m-menu .m-lnb a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+        font-size: 1.15em;
+        text-align: center;
+    }    
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) { 
@@ -1034,6 +1015,136 @@ table {
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    }
+
+    #header .close {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        display: none;
+    }
+
+    #header .m-header {
+        width: 100%;
+        display: none;
+    }
+    
+    #header .m-logo {
+        width: 100%;
+    }
+    
+    #header .m-logo img {
+        width: 200px;
+        position: relative;
+        top: 15px;
+        left: 30px;
+    }
+    
+    #header .m-login {
+        display: none;
+    }
+    
+    #header .m-login li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    #header .m-ticket {
+        display: none;
+    }
+    
+    #header .m-ticket li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    
+    #header .m-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1 1 40%;
+    }
+    
+    #header .m-menu .m-gnb {
+        flex: 0.5;
+    }
+    
+    #header .m-menu .m-gnb li {
+        padding: 30px 15px;
+        cursor: pointer;
+    }
+    
+    #header .m-menu .m-gnb a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-menu .m-lnb {
+        background: url('../images/poster_o.png') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        flex: 1;
+        padding: 50px 0;
+    }
+    
+    #header .m-menu .m-lnb1 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb2 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb3 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb4 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb5 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb6 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb7 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb8 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb9 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb li {
+        margin-bottom: 50px;
+    }
+    
+    #header .m-menu .m-lnb li:last-child {
+        margin-bottom: 0;
+    }
+    
+    #header .m-menu .m-lnb li:hover a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    }
+    
+    #header .m-menu .m-lnb a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-header {
+        width: 100%;
     }
     
     /* footer */
@@ -1263,19 +1374,142 @@ table {
         display: block;
     }
 
-    #header .close {
-        display: none;
-        position: absolute;
-        top: 15px;
-        right: 3%;
-    }
-
     #header .hamburger img {
         width: 27px;
+    }
+
+    #header .close {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        display: none;
     }
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    }
+
+    #header .m-header {
+        width: 100%;
+        display: none;
+    }
+    
+    #header .m-logo {
+        width: 100%;
+    }
+    
+    #header .m-logo img {
+        width: 200px;
+        position: relative;
+        top: 15px;
+        left: 30px;
+    }
+    
+    #header .m-login {
+        display: none;
+    }
+    
+    #header .m-login li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    #header .m-ticket {
+        display: none;
+    }
+    
+    #header .m-ticket li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    
+    #header .m-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1 1 40%;
+    }
+    
+    #header .m-menu .m-gnb {
+        flex: 0.5;
+    }
+    
+    #header .m-menu .m-gnb li {
+        padding: 30px 15px;
+        cursor: pointer;
+    }
+    
+    #header .m-menu .m-gnb a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-menu .m-lnb {
+        background: url('../images/poster_o.png') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        flex: 1;
+        padding: 50px 0;
+    }
+    
+    #header .m-menu .m-lnb1 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb2 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb3 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb4 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb5 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb6 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb7 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb8 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb9 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb li {
+        margin-bottom: 50px;
+    }
+    
+    #header .m-menu .m-lnb li:last-child {
+        margin-bottom: 0;
+    }
+    
+    #header .m-menu .m-lnb li:hover a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    }
+    
+    #header .m-menu .m-lnb a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-header {
+        width: 100%;
     }
 
     /* footer */
@@ -1515,19 +1749,135 @@ table {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
-    #header .close {
-        display: none;
-        position: absolute;
-        top: 15px;
-        right: 3%;
-    }
-
     #header .hamburger img {
         width: 27px;
     }
     
     #header nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
+    }
+
+    #header .m-header {
+        width: 100%;
+        display: none;
+    }
+    
+    #header .m-logo {
+        width: 100%;
+    }
+    
+    #header .m-logo img {
+        width: 200px;
+        position: relative;
+        top: 15px;
+        left: 30px;
+    }
+    
+    #header .m-login {
+        display: none;
+    }
+    
+    #header .m-login li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    #header .m-ticket {
+        display: none;
+    }
+    
+    #header .m-ticket li a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+    }
+    
+    #header .m-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1 1 40%;
+    }
+    
+    #header .m-menu .m-gnb {
+        flex: 0.5;
+    }
+    
+    #header .m-menu .m-gnb li {
+        padding: 30px 15px;
+        cursor: pointer;
+    }
+    
+    #header .m-menu .m-gnb a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-menu .m-lnb {
+        background: url('../images/poster_o.png') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        flex: 1;
+        padding: 50px 0;
+    }
+    
+    #header .m-menu .m-lnb1 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb2 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb3 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb4 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb5 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb6 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb7 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb8 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb9 {
+        display: none;
+    }
+    
+    #header .m-menu .m-lnb li {
+        margin-bottom: 50px;
+    }
+    
+    #header .m-menu .m-lnb li:last-child {
+        margin-bottom: 0;
+    }
+    
+    #header .m-menu .m-lnb li:hover a {
+        font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+    }
+    
+    #header .m-menu .m-lnb a {
+        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+        font-weight: 600;
+        font-size: 1.15em;
+        text-align: center;
+    }
+    
+    #header .m-header {
+        width: 100%;
     }
 
     /* footer */
