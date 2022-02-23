@@ -188,13 +188,13 @@ table {
     width: 200px;
 }
 
-#header nav {
+#header .h-wrap nav {
     position: relative;
     text-align: center;
     margin-bottom: 30px;
 }
 
-#header nav .gnb {
+#header .h-wrap nav .gnb {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -202,28 +202,28 @@ table {
     justify-content: space-between;
 }
 
-#header nav .gnb > li {
+#header .h-wrap nav .gnb > li {
     position: relative;
     width: 100%;
     vertical-align: top;
 }
 
-#header nav .gnb > li > a {
+#header .h-wrap nav .gnb > li > a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     font-size: 1.1em;
 }
 
-#header nav .lnb {
+#header .h-wrap nav .lnb {
     width: 100%;
     margin-top: 30px;
     display: none;
 }
 
-#header nav .lnb > li {
+#header .h-wrap nav .lnb > li {
     margin-bottom: 15px;
 }
 
-#header nav .lnb > li > a {
+#header .h-wrap nav .lnb > li > a {
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
 }
 
@@ -261,6 +261,31 @@ table {
 
 #header .close img {
     width: 27px;
+}
+
+#header .m-header {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+#header .m-menu {
+    margin-top: 60px;
+}
+
+#header .m-logo img {
+    width: 200px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#header .m-gnb {
+    text-align: center;
+}
+
+#header .m-lnb {
+    text-align: center;
 }
 
 /* footer */
@@ -355,17 +380,17 @@ table {
 
 /* 미디어쿼리 */
 @media all and (min-width: 1580px) {
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade-in 0.5s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-weight: 800;
         animation: fade-in 1s ease-in-out;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-weight: 800;
     }
 }
@@ -421,13 +446,13 @@ table {
         width: 200px;
     }
     
-    #header nav {
+    #header .h-wrap nav {
         position: relative;
         text-align: center;
         margin-bottom: 30px;
     }
     
-    #header nav .gnb {
+    #header .h-wrap nav .gnb {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -435,51 +460,51 @@ table {
         justify-content: space-between;
     }
     
-    #header nav .gnb > li {
+    #header .h-wrap nav .gnb > li {
         position: relative;
         width: 100%;
         vertical-align: top;
     }
     
-    #header nav .gnb > li > a {
+    #header .h-wrap nav .gnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.1em;
     }
 
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade-in 0.5s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-weight: 800;
         animation: fade-in 1s ease-in-out;
     }
     
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade 0.3s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
-    #header nav .lnb {
+    #header .h-wrap nav .lnb {
         width: 100%;
         margin-top: 30px;
         display: none;
     }
     
-    #header nav .lnb > li {
+    #header .h-wrap nav .lnb > li {
         margin-bottom: 15px;
     }
     
-    #header nav .lnb > li > a {
+    #header .h-wrap nav .lnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     }
 
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-weight: 800;
     }
     
@@ -503,7 +528,7 @@ table {
         width: 25px;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
 }
@@ -566,13 +591,13 @@ table {
         width: 200px;
     }
     
-    #header nav {
+    #header .h-wrap nav {
         position: relative;
         text-align: center;
         margin-bottom: 30px;
     }
     
-    #header nav .gnb {
+    #header .h-wrap nav .gnb {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -580,51 +605,51 @@ table {
         justify-content: space-between;
     }
     
-    #header nav .gnb > li {
+    #header .h-wrap nav .gnb > li {
         position: relative;
         width: 100%;
         vertical-align: top;
     }
     
-    #header nav .gnb > li > a {
+    #header .h-wrap nav .gnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.1em;
     }
     
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade-in 0.5s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-weight: 800;
         animation: fade-in 1s ease-in-out;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-weight: 800;
     }
 
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade 0.3s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
-    #header nav .lnb {
+    #header .h-wrap nav .lnb {
         width: 100%;
         margin-top: 30px;
         display: none;
     }
     
-    #header nav .lnb > li {
+    #header .h-wrap nav .lnb > li {
         margin-bottom: 15px;
     }
     
-    #header nav .lnb > li > a {
+    #header .h-wrap nav .lnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     }
     
@@ -648,7 +673,7 @@ table {
         width: 25px;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
@@ -706,7 +731,7 @@ table {
         width: 200px;
     }
     
-    #header nav > .gnb {
+    #header .h-wrap nav > .gnb {
         position: absolute;
         top: 100px;
         left: 0;
@@ -750,7 +775,6 @@ table {
 
     #header .close {
         position: absolute;
-        top: 30px;
         right: 10px;
         display: none;
     }
@@ -762,13 +786,6 @@ table {
     
     #header .m-logo {
         width: 100%;
-    }
-    
-    #header .m-logo img {
-        width: 200px;
-        position: relative;
-        top: 15px;
-        left: 30px;
     }
     
     #header .m-login {
@@ -793,7 +810,6 @@ table {
         height: 100%;
         display: flex;
         flex: 1 1 40%;
-        margin-top: 60px;
     }
     
     #header .m-menu .m-gnb {
@@ -809,7 +825,6 @@ table {
     #header .m-menu .m-gnb a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.15em;
-        text-align: center;
     }
     
     #header .m-menu .m-lnb {
@@ -818,7 +833,7 @@ table {
         width: 100%;
         height: auto;
         flex: 1;
-        padding: 50px 0;
+        padding: 50px;
     }
     
     #header .m-menu .m-lnb1 {
@@ -873,7 +888,6 @@ table {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
         font-size: 1.15em;
-        text-align: center;
     }    
 }
 
@@ -932,14 +946,14 @@ table {
         width: 200px;
     }
     
-    #header nav {
+    #header .h-wrap nav {
         display: none;
         position: relative;
         text-align: center;
         margin-bottom: 30px;
     }
     
-    #header nav .gnb {
+    #header .h-wrap nav .gnb {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -947,37 +961,37 @@ table {
         justify-content: space-between;
     }
     
-    #header nav .gnb > li {
+    #header .h-wrap nav .gnb > li {
         position: relative;
         width: 100%;
         vertical-align: top;
     }
     
-    #header nav .gnb > li > a {
+    #header .h-wrap nav .gnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.1em;
     }
     
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade 0.3s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
-    #header nav .lnb {
+    #header .h-wrap nav .lnb {
         width: 100%;
         margin-top: 30px;
         display: none;
     }
     
-    #header nav .lnb > li {
+    #header .h-wrap nav .lnb > li {
         margin-bottom: 15px;
     }
     
-    #header nav .lnb > li > a {
+    #header .h-wrap nav .lnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     }
     
@@ -1013,13 +1027,12 @@ table {
         width: 27px;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
 
     #header .close {
         position: absolute;
-        top: 30px;
         right: 10px;
         display: none;
     }
@@ -1031,13 +1044,6 @@ table {
     
     #header .m-logo {
         width: 100%;
-    }
-    
-    #header .m-logo img {
-        width: 200px;
-        position: relative;
-        top: 15px;
-        left: 30px;
     }
     
     #header .m-login {
@@ -1075,8 +1081,7 @@ table {
     
     #header .m-menu .m-gnb a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 1.15em;
-        text-align: center;
+        font-size: 1em;
     }
     
     #header .m-menu .m-lnb {
@@ -1085,7 +1090,7 @@ table {
         width: 100%;
         height: auto;
         flex: 1;
-        padding: 50px 0;
+        padding: 50px;
     }
     
     #header .m-menu .m-lnb1 {
@@ -1139,11 +1144,11 @@ table {
     #header .m-menu .m-lnb a {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1.15em;
-        text-align: center;
+        font-size: 1em;
     }
     
     #header .m-header {
+        display: none;
         width: 100%;
     }
     
@@ -1297,14 +1302,14 @@ table {
         width: 150px;
     }
     
-    #header nav {
+    #header .h-wrap nav {
         display: none;
         position: relative;
         text-align: center;
         margin-bottom: 30px;
     }
     
-    #header nav .gnb {
+    #header .h-wrap nav .gnb {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -1312,37 +1317,37 @@ table {
         justify-content: space-between;
     }
     
-    #header nav .gnb > li {
+    #header .h-wrap nav .gnb > li {
         position: relative;
         width: 100%;
         vertical-align: top;
     }
     
-    #header nav .gnb > li > a {
+    #header .h-wrap nav .gnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.1em;
     }
     
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade 0.3s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
-    #header nav .lnb {
+    #header .h-wrap nav .lnb {
         width: 100%;
         margin-top: 30px;
         display: none;
     }
     
-    #header nav .lnb > li {
+    #header .h-wrap nav .lnb > li {
         margin-bottom: 15px;
     }
     
-    #header nav .lnb > li > a {
+    #header .h-wrap nav .lnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     }
     
@@ -1380,12 +1385,11 @@ table {
 
     #header .close {
         position: absolute;
-        top: 15px;
         right: 10px;
         display: none;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
 
@@ -1396,13 +1400,6 @@ table {
     
     #header .m-logo {
         width: 100%;
-    }
-    
-    #header .m-logo img {
-        width: 200px;
-        position: relative;
-        top: 15px;
-        left: 30px;
     }
     
     #header .m-login {
@@ -1440,8 +1437,7 @@ table {
     
     #header .m-menu .m-gnb a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 1.15em;
-        text-align: center;
+        font-size: 1em;
     }
     
     #header .m-menu .m-lnb {
@@ -1450,7 +1446,7 @@ table {
         width: 100%;
         height: auto;
         flex: 1;
-        padding: 50px 0;
+        padding: 50px;
     }
     
     #header .m-menu .m-lnb1 {
@@ -1504,8 +1500,7 @@ table {
     #header .m-menu .m-lnb a {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1.15em;
-        text-align: center;
+        font-size: 1em;
     }
     
     #header .m-header {
@@ -1664,14 +1659,14 @@ table {
         width: 150px;
     }
     
-    #header nav {
+    #header .h-wrap nav {
         display: none;
         position: relative;
         text-align: center;
         margin-bottom: 30px;
     }
     
-    #header nav .gnb {
+    #header .h-wrap nav .gnb {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -1679,37 +1674,37 @@ table {
         justify-content: space-between;
     }
     
-    #header nav .gnb > li {
+    #header .h-wrap nav .gnb > li {
         position: relative;
         width: 100%;
         vertical-align: top;
     }
     
-    #header nav .gnb > li > a {
+    #header .h-wrap nav .gnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
         font-size: 1.1em;
     }
     
-    #header nav .gnb:hover .lnb {
+    #header .h-wrap nav .gnb:hover .lnb {
         display: block;
         animation: fade 0.3s ease-in;
     }
     
-    #header nav .gnb > li:hover > a {
+    #header .h-wrap nav .gnb > li:hover > a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
-    #header nav .lnb {
+    #header .h-wrap nav .lnb {
         width: 100%;
         margin-top: 30px;
         display: none;
     }
     
-    #header nav .lnb > li {
+    #header .h-wrap nav .lnb > li {
         margin-bottom: 15px;
     }
     
-    #header nav .lnb > li > a {
+    #header .h-wrap nav .lnb > li > a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     }
     
@@ -1745,15 +1740,21 @@ table {
         width: 20px;
     }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
     
     #header .hamburger img {
         width: 27px;
     }
+
+    #header .close {
+        position: absolute;
+        right: 10px;
+        display: none;
+    }
     
-    #header nav .lnb li:hover a {
+    #header .h-wrap nav .lnb li:hover a {
         font-family: 'SpoqaHanSansNeo-Bold', sans-serif;
     }
 
@@ -1764,13 +1765,6 @@ table {
     
     #header .m-logo {
         width: 100%;
-    }
-    
-    #header .m-logo img {
-        width: 200px;
-        position: relative;
-        top: 15px;
-        left: 30px;
     }
     
     #header .m-login {
@@ -1808,8 +1802,7 @@ table {
     
     #header .m-menu .m-gnb a {
         font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
-        font-size: 1.15em;
-        text-align: center;
+        font-size: 0.8em;
     }
     
     #header .m-menu .m-lnb {
@@ -1818,7 +1811,7 @@ table {
         width: 100%;
         height: auto;
         flex: 1;
-        padding: 50px 0;
+        padding: 50px;
     }
     
     #header .m-menu .m-lnb1 {
@@ -1872,12 +1865,12 @@ table {
     #header .m-menu .m-lnb a {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
-        font-size: 1.15em;
-        text-align: center;
+        font-size: 0.8em;
     }
     
     #header .m-header {
         width: 100%;
+        display: none;
     }
 
     /* footer */
