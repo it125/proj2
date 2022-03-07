@@ -269,6 +269,33 @@ table {
     top: 0;
 }
 
+#header .m-ticket {
+    display: inline-block;
+    position: relative;
+    top: 42px;
+    left: 40px;
+}
+
+#header .m-ticket ul {
+    overflow: hidden;
+}
+
+#header .m-ticket ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#header .m-ticket ul li:last-child {
+    margin-right: 0;
+}
+
+#header .m-ticket ul li a {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration-line: underline;
+}
+
 #header .m-menu {
     margin-top: 60px;
 }
@@ -286,6 +313,37 @@ table {
 
 #header .m-lnb {
     text-align: center;
+}
+
+#header .m-footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#header .m-footer a {
+    font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+#header .m-footer li {
+    margin-bottom: 15px;
+}
+
+#header .m-footer1 {
+    display: inline-block;
+    overflow: hidden;
+} 
+
+#header .m-footer1 li {
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+} 
+
+#header .m-footer1 li:last-child {
+    margin-right: 0;
 }
 
 /* footer */
@@ -787,24 +845,7 @@ table {
     #header .m-logo {
         width: 100%;
     }
-    
-    #header .m-login {
-        display: none;
-    }
-    
-    #header .m-login li a {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-    }
-    #header .m-ticket {
-        display: none;
-    }
-    
-    #header .m-ticket li a {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-    }
-    
+
     #header .m-menu {
         width: 100%;
         height: 100%;
@@ -873,7 +914,7 @@ table {
     }
     
     #header .m-menu .m-lnb li {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     
     #header .m-menu .m-lnb li:last-child {
@@ -1046,23 +1087,6 @@ table {
         width: 100%;
     }
     
-    #header .m-login {
-        display: none;
-    }
-    
-    #header .m-login li a {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-    }
-    #header .m-ticket {
-        display: none;
-    }
-    
-    #header .m-ticket li a {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-    }
-    
     #header .m-menu {
         width: 100%;
         height: 100%;
@@ -1130,7 +1154,7 @@ table {
     }
     
     #header .m-menu .m-lnb li {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     
     #header .m-menu .m-lnb li:last-child {
@@ -1402,23 +1426,24 @@ table {
         width: 100%;
     }
     
-    #header .m-login {
-        display: none;
+    #header .m-logo img {
+        width: 130px;
     }
-    
-    #header .m-login li a {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-    }
+
     #header .m-ticket {
-        display: none;
+        display: inline-block;
+        position: relative;
+        top: 42px;
+        left: 30px;
     }
-    
-    #header .m-ticket li a {
+
+    #header .m-ticket ul li a {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
+        font-size: 1em;
+        text-decoration-line: underline;
     }
-    
+
     #header .m-menu {
         width: 100%;
         height: 100%;
@@ -1486,7 +1511,7 @@ table {
     }
     
     #header .m-menu .m-lnb li {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     
     #header .m-menu .m-lnb li:last-child {
@@ -1766,22 +1791,23 @@ table {
     #header .m-logo {
         width: 100%;
     }
-    
-    #header .m-login {
-        display: none;
+
+    #header .m-logo img {
+        width: 130px;
     }
-    
-    #header .m-login li a {
-        font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
-        font-weight: 600;
-    }
+
     #header .m-ticket {
-        display: none;
+        display: inline-block;
+        position: relative;
+        top: 42px;
+        left: 30px;
     }
-    
-    #header .m-ticket li a {
+
+    #header .m-ticket ul li a {
         font-family: 'SpoqaHanSansNeo-Thin', sans-serif;
         font-weight: 600;
+        font-size: 1em;
+        text-decoration-line: underline;
     }
     
     #header .m-menu {
@@ -1851,7 +1877,7 @@ table {
     }
     
     #header .m-menu .m-lnb li {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     
     #header .m-menu .m-lnb li:last-child {

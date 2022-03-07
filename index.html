@@ -5,7 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIWFF</title>
+    <title>SIWFF 서울국제여성영화제</title>
+
+    <!--Open Graph-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="2021 SIWFF" />
+    <meta property="og:title" content="2021 SIWFF" />
+    <meta property="og:description" content="서울국제여성영화제" />
+    <meta property="og:image" content="./images/logo.png" />
+    <meta property="og:url" content="https://it125.github.io/proj2/" />
+
+    <!--Twitter Card-->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="2021 SIWFF" />
+    <meta property="twitter:title" content="2021 SIWFF" />
+    <meta property="twitter:description" content="서울국제여성영화제" />
+    <meta property="twitter:image" content="./images/logo.png" />
+    <meta property="twitter:url" content="https://it125.github.io/proj2/" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <link rel="stylesheet" href="./css/import.css">
 </head>
 
@@ -21,7 +57,7 @@
                         <li><a href="#">ENG</a></li>
                     </ul>
                 </div>
-                <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
+                <h1 class="logo"><a href="https://it125.github.io/proj2/"><img src="./images/logo.png" alt="로고"></a></h1>
             </div>
             <nav>
                 <ul class="gnb">
@@ -343,18 +379,11 @@
             </div>
         </div>
         <div class="m-header">
-            <h1 class="m-logo"><img src="./images/logo2.png" alt="로고"></h1>
+            <h1 class="m-logo"><a href="https://it125.github.io/proj2/"><img src="./images/logo2.png" alt="로고"></a></h1>
             <div class="close"><a href="#"><img src="./images/close.png" alt="전체 메뉴 닫기"></a></div>
-            <div class="m-login">
-                <ul>
-                    <li><a href="#">JOIN</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">ENG</a></li>
-                </ul>
-            </div>
             <div class="m-ticket">
                 <ul>
-                    <li><a href="#">예매 하기</a></li>
+                    <li><a href="#">예매하기</a></li>
                     <li><a href="#">모바일 티켓</a></li>
                 </ul>
             </div>
@@ -480,6 +509,17 @@
                     </div>
                 </div>
             </nav>
+            <div class="m-footer">
+                <ul class="m-footer1">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+                <ul class="m-footer2">
+                    <li><a href="#">ARCHIVE BORA</a></li>
+                    <li><a href="#">PITCH&CATCH</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -599,7 +639,6 @@
                         <option value="program13">필름X젠더</option>
                         <option value="program14">배리어프리</option>
                         <option value="program15">특별상영</option>
-                        <option value="program16">상영작 검색</option>
                     </select>
                 </label>
                 <div class="programs-more-button">
@@ -957,7 +996,7 @@
                 <h2>NEWSLETTER</h2>
             </div>
             <div class="newsletter-contents">
-                <form>
+                <form method="post">
                     <label for="name"></label>
                     <label for="email"></label>
                     <div class="newsletter-input">
